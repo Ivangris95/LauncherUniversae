@@ -4,7 +4,6 @@ package Activitys;
 import java.awt.Dimension;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import javax.swing.JLabel;
 import launcheruniversae.utility;
 
 public class simulatorActivity extends javax.swing.JPanel {
@@ -133,11 +132,16 @@ public class simulatorActivity extends javax.swing.JPanel {
         icon = new javax.swing.JLabel();
         tittleTxt = new javax.swing.JLabel();
         jTextPane2 = new javax.swing.JTextPane();
+        gradoTxt = new javax.swing.JLabel();
+        unidadTxt = new javax.swing.JLabel();
+        dificultadTxt = new javax.swing.JLabel();
+        asignaturaTxt = new javax.swing.JLabel();
+        duracionTxt = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         beginBtn = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(10, 38, 72));
@@ -175,7 +179,6 @@ public class simulatorActivity extends javax.swing.JPanel {
         indiceImg.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 4, 1));
 
         indicePrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/PuntoCarruselFilled.png"))); // NOI18N
-        indicePrincipal.setPreferredSize(new java.awt.Dimension(15, 15));
         indiceImg.add(indicePrincipal);
 
         indiceVacio0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/PuntoCarruselEmpty.png"))); // NOI18N
@@ -213,27 +216,52 @@ public class simulatorActivity extends javax.swing.JPanel {
         jTextPane2.setForeground(new java.awt.Color(255, 255, 255));
         jTextPane2.setText("En un campo de prácticas sumido en el desorden y la confusión tienes que encontrar tienes que encontrar y colocar las partes de los EPIs utilizados en la extinción de incendios forestales. ");
         jTextPane2.setOpaque(false);
-        infoPanel.add(jTextPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 48, 874, 97));
+        infoPanel.add(jTextPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 48, 1000, 97));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel1.setText("Coordinación de emergencias y protección civil. ");
-        infoPanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 880, 30));
+        gradoTxt.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        gradoTxt.setForeground(new java.awt.Color(255, 255, 255));
+        gradoTxt.setText("Coordinación de emergencias y protección civil. ");
+        infoPanel.add(gradoTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, 830, 30));
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel2.setText("Planificación y supervisión del mantenimiento de equipos, medios técnicos e instalaciones. ");
-        infoPanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, 880, 30));
+        unidadTxt.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        unidadTxt.setForeground(new java.awt.Color(255, 255, 255));
+        unidadTxt.setText("Planificación y supervisión del mantenimiento de equipos, medios técnicos e instalaciones. ");
+        infoPanel.add(unidadTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 210, 830, 30));
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel3.setText("Fácil");
-        infoPanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 880, 30));
+        dificultadTxt.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        dificultadTxt.setForeground(new java.awt.Color(255, 255, 255));
+        dificultadTxt.setText("Fácil");
+        infoPanel.add(dificultadTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, 830, 30));
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel4.setText("Gestión de recursos de emergencias y protección civil ");
-        infoPanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 880, 30));
+        asignaturaTxt.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        asignaturaTxt.setForeground(new java.awt.Color(255, 255, 255));
+        asignaturaTxt.setText("Gestión de recursos de emergencias y protección civil ");
+        infoPanel.add(asignaturaTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 180, 830, 30));
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel5.setText("10 minutos. ");
-        infoPanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 880, 30));
+        duracionTxt.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        duracionTxt.setForeground(new java.awt.Color(255, 255, 255));
+        duracionTxt.setText("10 minutos. ");
+        infoPanel.add(duracionTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 240, 830, 30));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        jLabel1.setText("Nivel de dificultad:");
+        infoPanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 150, 30));
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        jLabel3.setText("Grado:");
+        infoPanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 110, 30));
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        jLabel4.setText("Asignatura:");
+        infoPanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 110, 30));
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        jLabel5.setText("Unidad:");
+        infoPanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, 110, 30));
+
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        jLabel6.setText("Duración:");
+        infoPanel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 110, 30));
 
         add(infoPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 530, 1070, 330));
 
@@ -249,9 +277,13 @@ public class simulatorActivity extends javax.swing.JPanel {
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel asignaturaTxt;
     private javax.swing.JLabel beginBtn;
+    private javax.swing.JLabel dificultadTxt;
+    private javax.swing.JLabel duracionTxt;
     private javax.swing.JLabel flechaLeft;
     private javax.swing.JLabel flechaRight;
+    private javax.swing.JLabel gradoTxt;
     private javax.swing.JLabel icon;
     private javax.swing.JPanel indiceImg;
     private javax.swing.JLabel indicePrincipal;
@@ -261,14 +293,15 @@ public class simulatorActivity extends javax.swing.JPanel {
     private javax.swing.JLabel indiceVacio3;
     private javax.swing.JPanel infoPanel;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JTextPane jTextPane2;
     private javax.swing.JLabel lFondo;
     private javax.swing.JLabel principalImg;
     private javax.swing.JLabel rFondo;
     private javax.swing.JLabel tittleTxt;
+    private javax.swing.JLabel unidadTxt;
     // End of variables declaration//GEN-END:variables
 }
