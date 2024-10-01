@@ -78,11 +78,9 @@ public class mainActivity extends javax.swing.JFrame {
     }
 
       public void iniciarSimulacionYMostrarPanel(){
-          
-            simulatorActivity simulator = new simulatorActivity();
-            showPanel(simulator);
-            simulator.iniciarSimulator();
-            
+          simulatorActivity simulator = new simulatorActivity();
+          showPanel(simulator);
+          simulator.iniciarSimulator();
         }  
         
       
