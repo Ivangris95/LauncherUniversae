@@ -1,118 +1,196 @@
-
 package Activitys;
 
 import java.awt.Dimension;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import javax.swing.JLabel;
 import launcheruniversae.utility;
 
 public class simulatorActivity extends javax.swing.JPanel {
 
+    private JLabel[] dotArray;
+    private int index;
+
     public simulatorActivity() {
         initComponents();
+
+        dotArray = new JLabel[]{indice1, indice2, indice3, indice4, indice5};
+        index = 0;
+
         setVisible(true);
     }
-    
-    public void iniciarSimulator (){
-        
+
+    public void iniciarSimulator() {
         Dimension dimensionBtnStart = new Dimension(253, 44);
-        Dimension dimensionBtnStartHover = new Dimension(258,49);
+        Dimension dimensionBtnStartHover = new Dimension(258, 49);
         Dimension dimensionBtnStartPressed = new Dimension(248, 39);
-        
-        Dimension dimensionBtnRigthAndLeft = new Dimension(21,32);
+
+        Dimension dimensionBtnRigthAndLeft = new Dimension(21, 32);
         Dimension dimensionBtnRightAndLeftHover = new Dimension(23, 35);
-        Dimension dimensionBtnRightAndLeftOPressed = new Dimension(19,30);
-        
-        Dimension dimensionImgPrincipal = new Dimension(830,450);
-        Dimension dimensionImgFondo = new Dimension(480,380);
-        
-        
-       
-        
-        utility.SetImageLabel(beginBtn, "src/images/Comenzar.png",dimensionBtnStart);
+        Dimension dimensionBtnRightAndLeftOPressed = new Dimension(19, 30);
+
+        Dimension dimensionImgPrincipal = new Dimension(830, 450);
+        Dimension dimensionImgFondo = new Dimension(480, 380);
+
+        utility.SetImageLabel(beginBtn, "src/images/Comenzar.png", dimensionBtnStart);
         utility.SetImageLabel(flechaRight, "src/images/Flecha derecha.png", dimensionBtnRigthAndLeft);
         utility.SetImageLabel(flechaLeft, "src/images/Flecha izquierda.png", dimensionBtnRigthAndLeft);
         utility.SetImageLabel(principalImg, "src/images/Embarque0.png", dimensionImgPrincipal);
         utility.SetImageLabel(lFondo, "src/images/Embarque1.png", dimensionImgFondo);
         utility.SetImageLabel(rFondo, "src/images/Embarque2.png", dimensionImgFondo);
-        
-        flechaLeft.addMouseListener(new MouseAdapter(){
-            
-        String urlFlechaLeft = "src/images/Flecha izquierda.png";
-        
-                @Override
-                public void mouseEntered(MouseEvent e) {
+
+        String[] imagesArray = new String[]{"src/images/Embarque0.png", "src/images/Embarque1.png", "src/images/Embarque2.png",
+            "src/images/Embarque3.png", "src/images/Embarque4.png"};
+
+        flechaLeft.addMouseListener(new MouseAdapter() {
+
+            String urlFlechaLeft = "src/images/Flecha izquierda.png";
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
                 utility.SetImageLabel(flechaLeft, urlFlechaLeft, dimensionBtnRightAndLeftHover);
-                }
-            
-                @Override
-                public void mouseExited(MouseEvent e) {
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
                 utility.SetImageLabel(flechaLeft, urlFlechaLeft, dimensionBtnRigthAndLeft);
-                }
-            
-                @Override
-                public void mousePressed(MouseEvent e) {
-                utility.SetImageLabel(flechaLeft, urlFlechaLeft, dimensionBtnRightAndLeftOPressed);               
-                }
-            
-                @Override
-                public void mouseReleased(MouseEvent e) {
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e) {
+                utility.SetImageLabel(flechaLeft, urlFlechaLeft, dimensionBtnRightAndLeftOPressed);
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
                 utility.SetImageLabel(flechaLeft, urlFlechaLeft, dimensionBtnRigthAndLeft);
-                }  
-    });   
-        
-        flechaRight.addMouseListener(new MouseAdapter(){
-            
-        String urlFlechaRight = "src/images/Flecha derecha.png";
-        
-                @Override
-                public void mouseEntered(MouseEvent e) {
+            }
+
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                Dimension dimensionImgPrincipal = new Dimension(830, 450);
+                Dimension dimensionImgFondo = new Dimension(480, 380);
+                Dimension dotDimension = new Dimension(15, 15);
+
+                if (index == 0) {
+                    utility.SetImageLabel(lFondo, imagesArray[imagesArray.length - 2], dimensionImgFondo);
+                    utility.SetImageLabel(principalImg, imagesArray[imagesArray.length - 1], dimensionImgPrincipal);
+                    utility.SetImageLabel(rFondo, imagesArray[0], dimensionImgFondo);
+                    utility.SetImageLabel(dotArray[index], "src/images/PuntoCarruselEmpty.png", dotDimension);
+                    utility.SetImageLabel(dotArray[dotArray.length - 1], "src/images/PuntoCarruselFilled.png", dotDimension);
+                    index = imagesArray.length - 1;
+                } else if (index == 1) {
+                    utility.SetImageLabel(lFondo, imagesArray[imagesArray.length - 1], dimensionImgFondo);
+                    utility.SetImageLabel(principalImg, imagesArray[0], dimensionImgPrincipal);
+                    utility.SetImageLabel(rFondo, imagesArray[1], dimensionImgFondo);
+                    utility.SetImageLabel(dotArray[index], "src/images/PuntoCarruselEmpty.png", dotDimension);
+                    utility.SetImageLabel(dotArray[0], "src/images/PuntoCarruselFilled.png", dotDimension);
+                    index--;
+                } else {
+                    utility.SetImageLabel(lFondo, imagesArray[index - 2], dimensionImgFondo);
+                    utility.SetImageLabel(principalImg, imagesArray[index - 1], dimensionImgPrincipal);
+                    utility.SetImageLabel(rFondo, imagesArray[index], dimensionImgFondo);
+                    utility.SetImageLabel(dotArray[index], "src/images/PuntoCarruselEmpty.png", dotDimension);
+                    utility.SetImageLabel(dotArray[index - 1], "src/images/PuntoCarruselFilled.png", dotDimension);
+                    index--;
+                }
+            }
+        }
+        );
+
+        flechaRight.addMouseListener(
+                new MouseAdapter() {
+
+            String urlFlechaRight = "src/images/Flecha derecha.png";
+
+            @Override
+            public void mouseEntered(MouseEvent e
+            ) {
                 utility.SetImageLabel(flechaRight, urlFlechaRight, dimensionBtnRightAndLeftHover);
-                }
-            
-                @Override
-                public void mouseExited(MouseEvent e) {
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e
+            ) {
                 utility.SetImageLabel(flechaRight, urlFlechaRight, dimensionBtnRigthAndLeft);
-                }
-            
-                @Override
-                public void mousePressed(MouseEvent e) {
-                utility.SetImageLabel(flechaRight, urlFlechaRight, dimensionBtnRightAndLeftOPressed);               
-                }
-            
-                @Override
-                public void mouseReleased(MouseEvent e) {
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e
+            ) {
+                utility.SetImageLabel(flechaRight, urlFlechaRight, dimensionBtnRightAndLeftOPressed);
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e
+            ) {
                 utility.SetImageLabel(flechaRight, urlFlechaRight, dimensionBtnRigthAndLeft);
-                }  
-    });   
-        
-        beginBtn.addMouseListener(new MouseAdapter(){
-            
-        String urlBtnBegin = "src/images/Comenzar.png";
-        
-                @Override
-                public void mouseEntered(MouseEvent e) {
+            }
+
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                Dimension dimensionImgPrincipal = new Dimension(830, 450);
+                Dimension dimensionImgFondo = new Dimension(480, 380);
+                Dimension dotDimension = new Dimension(15, 15);
+
+                if (index == imagesArray.length - 2) {
+                    utility.SetImageLabel(lFondo, imagesArray[index], dimensionImgFondo);
+                    utility.SetImageLabel(principalImg, imagesArray[index + 1], dimensionImgPrincipal);
+                    utility.SetImageLabel(rFondo, imagesArray[0], dimensionImgFondo);
+                    utility.SetImageLabel(dotArray[index], "src/images/PuntoCarruselEmpty.png", dotDimension);
+                    utility.SetImageLabel(dotArray[index + 1], "src/images/PuntoCarruselFilled.png", dotDimension);
+                    index++;
+                } else if (index == imagesArray.length - 1) {
+                    utility.SetImageLabel(lFondo, imagesArray[index], dimensionImgFondo);
+                    utility.SetImageLabel(principalImg, imagesArray[0], dimensionImgPrincipal);
+                    utility.SetImageLabel(rFondo, imagesArray[1], dimensionImgFondo);
+                    utility.SetImageLabel(dotArray[index], "src/images/PuntoCarruselEmpty.png", dotDimension);
+                    utility.SetImageLabel(dotArray[0], "src/images/PuntoCarruselFilled.png", dotDimension);
+                    index = 0;
+                } else {
+                    utility.SetImageLabel(lFondo, imagesArray[index], dimensionImgFondo);
+                    utility.SetImageLabel(principalImg, imagesArray[index + 1], dimensionImgPrincipal);
+                    utility.SetImageLabel(rFondo, imagesArray[index + 2], dimensionImgFondo);
+                    utility.SetImageLabel(dotArray[index], "src/images/PuntoCarruselEmpty.png", dotDimension);
+                    utility.SetImageLabel(dotArray[index + 1], "src/images/PuntoCarruselFilled.png", dotDimension);
+                    index++;
+                }
+            }
+        }
+        );
+
+        beginBtn.addMouseListener(
+                new MouseAdapter() {
+
+            String urlBtnBegin = "src/images/Comenzar.png";
+
+            @Override
+            public void mouseEntered(MouseEvent e
+            ) {
                 utility.SetImageLabel(beginBtn, urlBtnBegin, dimensionBtnStartHover);
-                }
-            
-                @Override
-                public void mouseExited(MouseEvent e) {
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e
+            ) {
                 utility.SetImageLabel(beginBtn, urlBtnBegin, dimensionBtnStart);
-                }
-            
-                @Override
-                public void mousePressed(MouseEvent e) {
-                utility.SetImageLabel(beginBtn, urlBtnBegin, dimensionBtnStartPressed);               
-                }
-            
-                @Override
-                public void mouseReleased(MouseEvent e) {
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e
+            ) {
+                utility.SetImageLabel(beginBtn, urlBtnBegin, dimensionBtnStartPressed);
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e
+            ) {
                 utility.SetImageLabel(beginBtn, urlBtnBegin, dimensionBtnStart);
-                }  
-    });   
+            }
+        }
+        );
     }
 
- 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -123,11 +201,11 @@ public class simulatorActivity extends javax.swing.JPanel {
         flechaRight = new javax.swing.JLabel();
         flechaLeft = new javax.swing.JLabel();
         indiceImg = new javax.swing.JPanel();
-        indicePrincipal = new javax.swing.JLabel();
-        indiceVacio0 = new javax.swing.JLabel();
-        indiceVacio1 = new javax.swing.JLabel();
-        indiceVacio2 = new javax.swing.JLabel();
-        indiceVacio3 = new javax.swing.JLabel();
+        indice1 = new javax.swing.JLabel();
+        indice2 = new javax.swing.JLabel();
+        indice3 = new javax.swing.JLabel();
+        indice4 = new javax.swing.JLabel();
+        indice5 = new javax.swing.JLabel();
         infoPanel = new javax.swing.JPanel();
         icon = new javax.swing.JLabel();
         tittleTxt = new javax.swing.JLabel();
@@ -162,6 +240,7 @@ public class simulatorActivity extends javax.swing.JPanel {
         add(lFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 70, 480, 380));
 
         flechaRight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Flecha derecha.png"))); // NOI18N
+        flechaRight.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         add(flechaRight, new org.netbeans.lib.awtextra.AbsoluteConstraints(1260, 240, 22, 35));
 
         flechaLeft.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Flecha izquierda.png"))); // NOI18N
@@ -178,24 +257,24 @@ public class simulatorActivity extends javax.swing.JPanel {
         indiceImg.setOpaque(false);
         indiceImg.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 4, 1));
 
-        indicePrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/PuntoCarruselFilled.png"))); // NOI18N
-        indiceImg.add(indicePrincipal);
+        indice1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/PuntoCarruselFilled.png"))); // NOI18N
+        indiceImg.add(indice1);
 
-        indiceVacio0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/PuntoCarruselEmpty.png"))); // NOI18N
-        indiceVacio0.setPreferredSize(new java.awt.Dimension(15, 15));
-        indiceImg.add(indiceVacio0);
+        indice2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/PuntoCarruselEmpty.png"))); // NOI18N
+        indice2.setPreferredSize(new java.awt.Dimension(15, 15));
+        indiceImg.add(indice2);
 
-        indiceVacio1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/PuntoCarruselEmpty.png"))); // NOI18N
-        indiceVacio1.setPreferredSize(new java.awt.Dimension(15, 15));
-        indiceImg.add(indiceVacio1);
+        indice3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/PuntoCarruselEmpty.png"))); // NOI18N
+        indice3.setPreferredSize(new java.awt.Dimension(15, 15));
+        indiceImg.add(indice3);
 
-        indiceVacio2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/PuntoCarruselEmpty.png"))); // NOI18N
-        indiceVacio2.setPreferredSize(new java.awt.Dimension(15, 15));
-        indiceImg.add(indiceVacio2);
+        indice4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/PuntoCarruselEmpty.png"))); // NOI18N
+        indice4.setPreferredSize(new java.awt.Dimension(15, 15));
+        indiceImg.add(indice4);
 
-        indiceVacio3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/PuntoCarruselEmpty.png"))); // NOI18N
-        indiceVacio3.setPreferredSize(new java.awt.Dimension(15, 15));
-        indiceImg.add(indiceVacio3);
+        indice5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/PuntoCarruselEmpty.png"))); // NOI18N
+        indice5.setPreferredSize(new java.awt.Dimension(15, 15));
+        indiceImg.add(indice5);
 
         add(indiceImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 490, 100, 15));
 
@@ -267,14 +346,15 @@ public class simulatorActivity extends javax.swing.JPanel {
 
         beginBtn.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         beginBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Comenzar.png"))); // NOI18N
+        beginBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         add(beginBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 770, 263, 54));
     }// </editor-fold>//GEN-END:initComponents
 
-    Dimension dimensionBtnRightAndLeftOPressed = new Dimension(12,25);
+    Dimension dimensionBtnRightAndLeftOPressed = new Dimension(12, 25);
     private void flechaLeftMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_flechaLeftMousePressed
         utility.SetImageLabel(flechaLeft, "src/images/Flecha izquierda.png", dimensionBtnRightAndLeftOPressed);
     }//GEN-LAST:event_flechaLeftMousePressed
-    
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel asignaturaTxt;
@@ -285,12 +365,12 @@ public class simulatorActivity extends javax.swing.JPanel {
     private javax.swing.JLabel flechaRight;
     private javax.swing.JLabel gradoTxt;
     private javax.swing.JLabel icon;
+    private javax.swing.JLabel indice1;
+    private javax.swing.JLabel indice2;
+    private javax.swing.JLabel indice3;
+    private javax.swing.JLabel indice4;
+    private javax.swing.JLabel indice5;
     private javax.swing.JPanel indiceImg;
-    private javax.swing.JLabel indicePrincipal;
-    private javax.swing.JLabel indiceVacio0;
-    private javax.swing.JLabel indiceVacio1;
-    private javax.swing.JLabel indiceVacio2;
-    private javax.swing.JLabel indiceVacio3;
     private javax.swing.JPanel infoPanel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
