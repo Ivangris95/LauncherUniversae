@@ -48,7 +48,7 @@ public class HomeActivity extends javax.swing.JPanel {
             
                 @Override
                 public void mouseClicked (MouseEvent e) {      
-                padre.iniciarSimulacionYMostrarPanel();
+                padre.iniciarSimulacionYMostrarPanel(index);
                 
                     switch (index) {
                         case 0:

@@ -20,9 +20,6 @@ public class mainActivity extends javax.swing.JFrame {
         initComponents();
         
         uniApp = new universaeApp();
-        
-        System.out.println(uniApp.getTituloSimulacion());
-        System.out.println(uniApp.getDescripcionSimulacion());
     
         //contentHome = new JPanel(new BorderLayout());
         JLabel[] escudos = {Button1, Button2, Button3, Button4, Button5, Button6, Button7, Button8, Button9, Button10, Button11, Button12, Button13, Button14};
@@ -83,8 +80,8 @@ public class mainActivity extends javax.swing.JFrame {
       
     }
 
-      public void iniciarSimulacionYMostrarPanel(){
-          simulatorActivity simulator = new simulatorActivity();
+      public void iniciarSimulacionYMostrarPanel(int indexSimulador){
+          simulatorActivity simulator = new simulatorActivity(indexSimulador);
           showPanel(simulator);
           simulator.iniciarSimulator();
         }  
