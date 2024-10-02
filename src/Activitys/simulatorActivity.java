@@ -10,18 +10,23 @@ import launcheruniversae.utility;
 public class simulatorActivity extends javax.swing.JPanel {
 
     private JLabel[] dotArray;
+    private String[] imagesArray = new String[5];
     private int index;
     private universaeApp uniApp;
     private HomeActivity home;
     
 
-    public simulatorActivity() {
+    public simulatorActivity(int indexSimulador) {
         initComponents();
         
         uniApp = new universaeApp();
-
+        
+        imagesArray = utility.CreateArrayWithImages(imagesArray, indexSimulador);
         dotArray = new JLabel[]{indice1, indice2, indice3, indice4, indice5};
         index = 0;
+        
+        tittleTxt.setText(uniApp.getTituloSimulacion(indexSimulador));
+        descripcionTxt.setText(uniApp.getDescripcionSimulacion(indexSimulador));
 
         setVisible(true);
     }
@@ -42,15 +47,9 @@ public class simulatorActivity extends javax.swing.JPanel {
         utility.SetImageLabel(beginBtn, "src/images/Comenzar.png", dimensionBtnStart);
         utility.SetImageLabel(flechaRight, "src/images/Flecha derecha.png", dimensionBtnRigthAndLeft);
         utility.SetImageLabel(flechaLeft, "src/images/Flecha izquierda.png", dimensionBtnRigthAndLeft);
-        utility.SetImageLabel(principalImg, "src/images/Embarque0.png", dimensionImgPrincipal);
-        utility.SetImageLabel(lFondo, "src/images/Embarque1.png", dimensionImgFondo);
-        utility.SetImageLabel(rFondo, "src/images/Embarque2.png", dimensionImgFondo);
-        
-        tittleTxt.setText(uniApp.getTituloSimulacion());
-        descripcionTxt.setText(uniApp.getDescripcionSimulacion());
-
-        String[] imagesArray = new String[]{"src/images/Embarque0.png", "src/images/Embarque1.png", "src/images/Embarque2.png",
-            "src/images/Embarque3.png", "src/images/Embarque4.png"};
+        utility.SetImageLabel(principalImg, imagesArray[0], dimensionImgPrincipal);
+        utility.SetImageLabel(lFondo, imagesArray[1], dimensionImgFondo);
+        utility.SetImageLabel(rFondo, imagesArray[2], dimensionImgFondo);
 
         flechaLeft.addMouseListener(new MouseAdapter() {
 
@@ -291,14 +290,14 @@ public class simulatorActivity extends javax.swing.JPanel {
 
         tittleTxt.setFont(new java.awt.Font("Segoe UI", 1, 22)); // NOI18N
         tittleTxt.setForeground(new java.awt.Color(255, 255, 255));
-        tittleTxt.setText("Mantenimiento de los equipos y herramientas de extinción de incendios forestales. ");
+        tittleTxt.setText("Esto será un título de la simulación");
         infoPanel.add(tittleTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 6, 1041, -1));
 
         descripcionTxt.setEditable(false);
         descripcionTxt.setBorder(null);
         descripcionTxt.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         descripcionTxt.setForeground(new java.awt.Color(255, 255, 255));
-        descripcionTxt.setText("En un campo de prácticas sumido en el desorden y la confusión tienes que encontrar tienes que encontrar y colocar las partes de los EPIs utilizados en la extinción de incendios forestales. ");
+        descripcionTxt.setText("Esto será una descripción de la simulación");
         descripcionTxt.setOpaque(false);
         infoPanel.add(descripcionTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 48, 874, 97));
 
@@ -322,7 +321,7 @@ public class simulatorActivity extends javax.swing.JPanel {
         jLabel5.setText("10 minutos. ");
         infoPanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 880, 30));
 
-        add(infoPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 530, 1070, 330));
+        add(infoPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 540, 1070, 320));
 
         beginBtn.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         beginBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Comenzar.png"))); // NOI18N

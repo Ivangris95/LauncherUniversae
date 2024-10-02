@@ -15,8 +15,6 @@ public class universaeApp {
     private JsonArray grados;
     
     private int gradosIndex = 0;
-    private int simuladoresIndex = 0;
-   
     
     public universaeApp() {
         leerJson();
@@ -53,13 +51,13 @@ public class universaeApp {
         }
     }
     
-    public String getTituloSimulacion() {
-        return grados.get(gradosIndex).getAsJsonObject().getAsJsonArray("simuladores").get(simuladoresIndex).getAsJsonObject().get("titulo").getAsString();
+    public String getTituloSimulacion(int indexSimulador) {
+        return grados.get(gradosIndex).getAsJsonObject().getAsJsonArray("simuladores").get(indexSimulador).getAsJsonObject().get("titulo").getAsString();
        
     }
     
-    public String getDescripcionSimulacion() {
-        return grados.get(gradosIndex).getAsJsonObject().getAsJsonArray("simuladores").get(simuladoresIndex).getAsJsonObject().get("descripcion").getAsString();
+    public String getDescripcionSimulacion(int indexSimulador) {
+        return grados.get(gradosIndex).getAsJsonObject().getAsJsonArray("simuladores").get(indexSimulador).getAsJsonObject().get("descripcion").getAsString();
     }
     
     public String getNombreGrado() {
@@ -74,8 +72,8 @@ public class universaeApp {
 //        return grados.get(gradosIndex).getAsJsonObject().get("contenido").getAsJsonObject().get("unidad").getAsString();
 //    }
     
-    public String getImgSimulador() {
-        return grados.get(gradosIndex).getAsJsonObject().getAsJsonArray("simuladores").get(simuladoresIndex).getAsJsonObject().get("img").getAsString();
+    public String getImgSimulador(int indexSimulador) {
+        return grados.get(gradosIndex).getAsJsonObject().getAsJsonArray("simuladores").get(indexSimulador).getAsJsonObject().get("img").getAsString();
     }
     
    
