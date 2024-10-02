@@ -75,7 +75,7 @@ public class universaeApp {
 //    }
     
     public String getImgSimulador() {
-        return grados.get(gradosIndex).getAsJsonObject().getAsJsonArray("simuladores").get(simuladoresIndex).getAsJsonObject().get("img").getAsString();
+        return grados.get(gradosIndex).getAsJsonObject().getAsJsonArray("simuladores").get(gradosIndex).getAsJsonObject().get("img").getAsString();
     }
     
    

@@ -10,6 +10,7 @@ import launcheruniversae.utility;
 public class simulatorActivity extends javax.swing.JPanel {
 
     private JLabel[] dotArray;
+    private String[] imagesArray = new String[5];
     private int index;
     private universaeApp uniApp;
     private HomeActivity home;
@@ -19,6 +20,8 @@ public class simulatorActivity extends javax.swing.JPanel {
         initComponents();
         
         uniApp = new universaeApp();
+        
+        imagesArray = utility.CreateArrayWithImages(imagesArray);
 
         dotArray = new JLabel[]{indice1, indice2, indice3, indice4, indice5};
         index = 0;
@@ -48,9 +51,6 @@ public class simulatorActivity extends javax.swing.JPanel {
         
         tittleTxt.setText(uniApp.getTituloSimulacion());
         descripcionTxt.setText(uniApp.getDescripcionSimulacion());
-
-        String[] imagesArray = new String[]{"src/images/Embarque0.png", "src/images/Embarque1.png", "src/images/Embarque2.png",
-            "src/images/Embarque3.png", "src/images/Embarque4.png"};
 
         flechaLeft.addMouseListener(new MouseAdapter() {
 
