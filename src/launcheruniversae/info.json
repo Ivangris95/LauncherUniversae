@@ -1,0 +1,166 @@
+{
+    "grados": [
+        {
+            "nombre": "Ascensor",
+            "contenido": {
+                "titulo": "Especialista en Instalación y Mantenimiento de Ascensores",
+                "descripcion": "Nuestro simulador de ascensores te permite experimentar de primera mano cómo funciona un elevador. Es como tener un ascensor en miniatura, pero con todas las funciones y controles de uno real.",
+                "grado": "Automatización y Control Industrial",
+                "asignatura": "Sistemas de Elevación y Transporte Vertical",
+                "unidad": "Simulación y Modelado de Ascensores",
+                "img": [
+                    {
+                        "urlImg": "src/Ascensor0.png"
+                    },
+                    {
+                        "urlImg": "src/Ascensor1.png"
+                    }, 
+                    {
+                        "urlImg": "src/Ascensor2.png"
+                    },
+                    {
+                        "urlImg": "src/Ascensor3.png"
+                    },
+                    {
+                        "urlImg": "src/Ascensor4.png"
+                    }
+                ]
+            }
+        },
+        {
+            "nombre": "EPIS",
+            "contenido": {
+                "titulo": "Seguridad Industrial y Salud Laboral",
+                "descripcion": "Un grado en EPIS se enfoca en la prevención de riesgos y la gestión de emergencias en diversos entornos, incluyendo edificios.",
+                "grado": "Protección Civil y Seguridad Industrial (EPIS)",
+                "asignatura": "Sistemas de Seguridad en Edificios",
+                "unidad": "Simulación y Análisis de Riesgos en Sistemas de Elevación",
+                "img": [
+                    {
+                        "urlImg": "src/EPIS0.png"
+                    },
+                    {
+                        "urlImg": "src/EPIS1.png"
+                    },
+                    {
+                        "urlImg": "src/EPIS2.png"
+                    },
+                    {
+                        "urlImg": "src/EPIS3.png"
+                    },
+                    {
+                        "urlImg": "src/EPIS4.png"
+                    }
+                ]
+            }
+        },
+        {
+            "nombre": "Embarque",
+            "contenido": {
+                "titulo": "Operaciones Marítimas",
+                "descripcion": "Esta unidad se centrará en el uso de herramientas de simulación para analizar y optimizar los procesos de embarque. Los estudiantes aprenderán a modelar el flujo de pasajeros, equipaje y carga, a identificar cuellos de botella y a evaluar el impacto de diferentes estrategias de embarque en el rendimiento del sistema.",
+                "grado": "Logística y Cadena de Suministro",
+                "asignatura": "Simulación y Optimización de Procesos Logísticos",
+                "unidad": "Simulación de Procesos de Embarque en Transporte",
+                "img": [
+                    {
+                        "urlImg": "src/Embarque0.png"
+                    },
+                    {
+                        "urlImg": "src/Embarque1.png"
+                    },
+                    {
+                        "urlImg": "src/Embarque2.png"
+                    },
+                    {
+                        "urlImg": "src/Embarque3.png"
+                    },
+                    {
+                        "urlImg": "src/Embarque4.png"
+                    }
+                ]
+            }
+        },
+        {
+            "nombre": "Extinción",
+            "contenido": {
+                "titulo": "Mantenimiento de los equipos y herramientas de extinción de incendios forestales.",
+                "descripcion": "Esta unidad se centrará en el uso de herramientas de simulación para modelar y analizar incendios en diferentes escenarios (edificios, industrias, vehículos, etc.).",
+                "grado": "Seguridad Industrial",
+                "asignatura": "Gestión de Emergencias y Protección Civil",
+                "unidad": "Simulación de Incendios y Operaciones de Extinción",
+                "img": [
+                    {
+                        "urlImg": "src/Extincion0.png" 
+                    },
+                    {
+                        "urlImg": "src/Extincion1.png"
+                    },
+                    {
+                        "urlImg": "src/Extincion2.png"
+                    },
+                    {
+                        "urlImg": "src/Extincion3.png"
+                    },
+                    {
+                        "urlImg": "src/Extincion4.png"
+                    }
+                ]
+            }
+        },
+        {
+            "nombre": "Helicóptero",
+            "contenido": {
+                "titulo": "Operaciones Aéreas con Helicópteros",
+                "descripcion": "Esta unidad se centrará en el uso de herramientas de simulación para modelar y analizar el vuelo de helicópteros.",
+                "grado": "Aeronáutica o Ingeniería en Sistemas Aeronáuticos",
+                "asignatura": "Dinámica de Vuelo y Simulación",
+                "unidad": "Simulación de Vuelo de Helicópteros",
+                "img": [
+                    {
+                        "urlImg": "src/Helicoptero0.png"
+                    },
+                    {
+                        "urlImg": "src/Helicoptero1.png"
+                    },
+                    {
+                        "urlImg": "src/Helicoptero2.png"
+                    },
+                    {
+                        "urlImg": "src/Helicoptero3.png"
+                    },
+                    {
+                        "urlImg": "src/Helicoptero4.png" 
+                    }
+                ]
+            }
+        },
+        {
+            "nombre": "Hemorragia",
+            "contenido": {
+                "titulo": "Gestión y Control de Hemorragias en Situaciones de Emergencia",
+                "descripcion": "sta unidad se centrará en el uso de simuladores médicos para entrenar a profesionales de la salud en el manejo de pacientes con hemorragias traumáticas. ",
+                "grado": "Medicina, Enfermería o Técnico en Emergencias Sanitarias",
+                "asignatura": "Trauma y Urgencias",
+                "unidad": "Simulación de Hemorragias y Manejo de Trauma",
+                "img": [
+                    {
+                        "urlImg": "src/Hemorragia0.png"
+                    },
+                    {
+                        "urlImg": "src/Hemorragia1.png"
+                    },
+                    {
+                        "urlImg": "src/Hemorragia2.png"
+                    },
+                    {
+                        "urlImg": "src/Hemorragia3.png"
+                    },
+                    {
+                        "urlImg": "src/Hemorragia4.png"
+                    }
+                ]
+            }
+        }
+    ]
+}
