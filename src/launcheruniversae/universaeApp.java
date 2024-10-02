@@ -4,7 +4,6 @@ package launcheruniversae;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
-import java.awt.List;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -74,16 +73,7 @@ public class universaeApp {
         return grados.get(gradosIndex).getAsJsonObject().get("contenido").getAsJsonObject().get("unidad").getAsString();
     }
     
-    public ArrayList<String> getImgGrado() {
-        ArrayList<String> urls = new ArrayList<>();
-        
-        for (int i=0; i< 5; i++) {
-            String url = grados.get(gradosIndex).getAsJsonObject().get("contenido").getAsJsonObject().getAsJsonArray("img").get(i).getAsJsonObject().get("urlImg").getAsString();
-            urls.add(url);
-        }
-        
-        return urls;
-    }
+    
     
    
 }
