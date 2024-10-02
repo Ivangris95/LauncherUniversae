@@ -4,36 +4,40 @@
             "nombre": "Coordinación de emergencias y protección civil.",
             "simuladores": [
                 {
-                    "titulo": "Especialista en Instalación y Mantenimiento de Ascensores",
-                    "descripcion": "Nuestro simulador de ascensores te permite experimentar de primera mano cómo funciona un elevador. Es como tener un ascensor en miniatura, pero con todas las funciones y controles de uno real.",
-                    "img": "Ascensor",
+                    "titulo": "Embarque y Desembarque en Helicóptero",
+                    "descripcion": "Este simulador recrea de forma realista las condiciones de un helipuerto, permitiendo al usuario practicar las técnicas correctas de embarque y desembarque en un helicóptero, tanto en condiciones diurnas como nocturnas.",
+                    "img": "Embarque",
                     "direccionEjecutable": "vvvjajvj.exe"
                 },
                 {
-                    "titulo": "Seguridad Industrial y Salud Laboral",
-                    "descripcion": "Un grado en EPIS se enfoca en la prevención de riesgos y la gestión de emergencias en diversos entornos, incluyendo edificios.",
-                    "img": "EPIS",
-                    "direccionEjecutable": "dkllkasjf.exe"
-                }, {
-                    "titulo": "Operaciones Marítimas",
-                    "descripcion": "Esta unidad se centrará en el uso de herramientas de simulación para analizar y optimizar los procesos de embarque. Los estudiantes aprenderán a modelar el flujo de pasajeros, equipaje y carga, a identificar cuellos de botella y a evaluar el impacto de diferentes estrategias de embarque en el rendimiento del sistema.",
-                    "img": "Embarque",
-                    "direccionEjecutable": "jbzxjvfsd.exe"
-                }, {
-                    "titulo": "Mantenimiento de los equipos y herramientas de extinción de incendios forestales.",
-                    "descripcion": "Esta unidad se centrará en el uso de herramientas de simulación para modelar y analizar incendios en diferentes escenarios (edificios, industrias, vehículos, etc.).",
-                    "img": "Extincion",
-                    "direccionEjecutable": "sczxberb.exe"
-                }, {
-                    "titulo": "Operaciones Aéreas con Helicópteros",
-                    "descripcion": "Esta unidad se centrará en el uso de herramientas de simulación para modelar y analizar el vuelo de helicópteros.",
-                    "img": "Helicoptero",
-                    "direccionEjecutable": "ccbrfio.exe"
-                }, {
-                    "titulo": "Gestión y Control de Hemorragias en Situaciones de Emergencia",
-                    "descripcion": "sta unidad se centrará en el uso de simuladores médicos para entrenar a profesionales de la salud en el manejo de pacientes con hemorragias traumáticas. ",
+                    "titulo": "Protocolo ante una Hemorragia Externa",
+                    "descripcion": "Adquiere las habilidades necesarias para controlar hemorragias externas en diferentes escenarios y con distintos tipos de heridas. Practica el uso de materiales de primeros auxilios y toma decisiones rápidas bajo presión.",
                     "img": "Hemorragia",
+                    "direccionEjecutable": "dkllkasjf.exe"
+                }, 
+                {
+                    "titulo": "Maniobras de Extinción según la Instalación",
+                    "descripcion": "Aprende a combatir incendios en una variedad de entornos, desde edificios hasta instalaciones industriales. Domina el uso de equipos de extinción y desarrolla estrategias efectivas para controlar el fuego.",
+                    "img": "Extincion",
+                    "direccionEjecutable": "jbzxjvfsd.exe"
+                },
+                {
+                    "titulo": "Tipología y Características de los EPI",
+                    "descripcion": "Familiarízate con los diferentes tipos de equipos de protección individual y su uso correcto. Identifica el EPI adecuado para cada situación y aprende a mantenerlo en óptimas condiciones.",
+                    "img": "EPIS",
                     "direccionEjecutable": "cjvzxkjv.exe"
+                },
+                {
+                    "titulo": "Señalización a Helicóptero desde Tierra",
+                    "descripcion": "Comunica de manera efectiva con un helicóptero utilizando señales manuales. Aprende los códigos y protocolos de señalización para solicitar rescate o asistencia en diversas situaciones.",
+                    "img": "Helicoptero",
+                    "direccionEjecutable": "sczxberb.exe"
+                }, 
+                {
+                    "titulo": "Rescate en Ascensores",
+                    "descripcion": "Adquiere las habilidades necesarias para rescatar personas atrapadas en ascensores en caso de emergencia. Practica el uso de herramientas especializadas y sigue los procedimientos de seguridad establecidos.",
+                    "img": "Ascensor",
+                    "direccionEjecutable": "ccbrfio.exe"
                 }
             ]
         }

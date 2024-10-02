@@ -14,7 +14,8 @@ import java.util.ArrayList;
 public class universaeApp {
     private JsonArray grados;
     
-    private int gradosIndex = 2;
+    private int gradosIndex = 0;
+    private int simuladoresIndex = 0;
    
     
     public universaeApp() {
@@ -52,28 +53,31 @@ public class universaeApp {
         }
     }
     
-    public String getTituloGrado() {
-        return grados.get(gradosIndex).getAsJsonObject().get("contenido").getAsJsonObject().get("titulo").getAsString();
+    public String getTituloSimulacion() {
+        return grados.get(gradosIndex).getAsJsonObject().getAsJsonArray("simuladores").get(simuladoresIndex).getAsJsonObject().get("titulo").getAsString();
        
     }
     
-    public String getDescripcionGrado() {
-        return grados.get(gradosIndex).getAsJsonObject().get("contenido").getAsJsonObject().get("descripcion").getAsString();
+    public String getDescripcionSimulacion() {
+        return grados.get(gradosIndex).getAsJsonObject().getAsJsonArray("simuladores").get(simuladoresIndex).getAsJsonObject().get("descripcion").getAsString();
     }
     
     public String getNombreGrado() {
-        return grados.get(gradosIndex).getAsJsonObject().get("contenido").getAsJsonObject().get("grado").getAsString();
+        return grados.get(gradosIndex).getAsJsonObject().get("nombre").getAsString();
     }
     
-    public String getAsignaturaGrado() {
-        return grados.get(gradosIndex).getAsJsonObject().get("contenido").getAsJsonObject().get("asignatura").getAsString();
+//    public String getAsignaturaGrado() {
+//        return grados.get(gradosIndex).getAsJsonObject().get("contenido").getAsJsonObject().get("asignatura").getAsString();
+//    }
+    
+//    public String getUnidadGrado() {
+//        return grados.get(gradosIndex).getAsJsonObject().get("contenido").getAsJsonObject().get("unidad").getAsString();
+//    }
+    
+    public String getImgSimulador() {
+        return grados.get(gradosIndex).getAsJsonObject().getAsJsonArray("simuladores").get(simuladoresIndex).getAsJsonObject().get("img").getAsString();
     }
     
-    public String getUnidadGrado() {
-        return grados.get(gradosIndex).getAsJsonObject().get("contenido").getAsJsonObject().get("unidad").getAsString();
-    }
-    
-    
-    
+   
    
 }
