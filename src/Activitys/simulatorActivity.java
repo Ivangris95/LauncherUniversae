@@ -4,15 +4,21 @@ import java.awt.Dimension;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JLabel;
+import launcheruniversae.universaeApp;
 import launcheruniversae.utility;
 
 public class simulatorActivity extends javax.swing.JPanel {
 
     private JLabel[] dotArray;
     private int index;
+    private universaeApp uniApp;
+    private HomeActivity home;
+    
 
     public simulatorActivity() {
         initComponents();
+        
+        uniApp = new universaeApp();
 
         dotArray = new JLabel[]{indice1, indice2, indice3, indice4, indice5};
         index = 0;
@@ -31,13 +37,17 @@ public class simulatorActivity extends javax.swing.JPanel {
 
         Dimension dimensionImgPrincipal = new Dimension(830, 450);
         Dimension dimensionImgFondo = new Dimension(480, 380);
-
+        
+        
         utility.SetImageLabel(beginBtn, "src/images/Comenzar.png", dimensionBtnStart);
         utility.SetImageLabel(flechaRight, "src/images/Flecha derecha.png", dimensionBtnRigthAndLeft);
         utility.SetImageLabel(flechaLeft, "src/images/Flecha izquierda.png", dimensionBtnRigthAndLeft);
         utility.SetImageLabel(principalImg, "src/images/Embarque0.png", dimensionImgPrincipal);
         utility.SetImageLabel(lFondo, "src/images/Embarque1.png", dimensionImgFondo);
         utility.SetImageLabel(rFondo, "src/images/Embarque2.png", dimensionImgFondo);
+        
+        tittleTxt.setText(uniApp.getTituloSimulacion());
+        descripcionTxt.setText(uniApp.getDescripcionSimulacion());
 
         String[] imagesArray = new String[]{"src/images/Embarque0.png", "src/images/Embarque1.png", "src/images/Embarque2.png",
             "src/images/Embarque3.png", "src/images/Embarque4.png"};
@@ -209,7 +219,7 @@ public class simulatorActivity extends javax.swing.JPanel {
         infoPanel = new javax.swing.JPanel();
         icon = new javax.swing.JLabel();
         tittleTxt = new javax.swing.JLabel();
-        jTextPane2 = new javax.swing.JTextPane();
+        descripcionTxt = new javax.swing.JTextPane();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -284,13 +294,13 @@ public class simulatorActivity extends javax.swing.JPanel {
         tittleTxt.setText("Mantenimiento de los equipos y herramientas de extinción de incendios forestales. ");
         infoPanel.add(tittleTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 6, 1041, -1));
 
-        jTextPane2.setEditable(false);
-        jTextPane2.setBorder(null);
-        jTextPane2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jTextPane2.setForeground(new java.awt.Color(255, 255, 255));
-        jTextPane2.setText("En un campo de prácticas sumido en el desorden y la confusión tienes que encontrar tienes que encontrar y colocar las partes de los EPIs utilizados en la extinción de incendios forestales. ");
-        jTextPane2.setOpaque(false);
-        infoPanel.add(jTextPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 48, 874, 97));
+        descripcionTxt.setEditable(false);
+        descripcionTxt.setBorder(null);
+        descripcionTxt.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        descripcionTxt.setForeground(new java.awt.Color(255, 255, 255));
+        descripcionTxt.setText("En un campo de prácticas sumido en el desorden y la confusión tienes que encontrar tienes que encontrar y colocar las partes de los EPIs utilizados en la extinción de incendios forestales. ");
+        descripcionTxt.setOpaque(false);
+        infoPanel.add(descripcionTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 48, 874, 97));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel1.setText("Coordinación de emergencias y protección civil. ");
@@ -328,6 +338,7 @@ public class simulatorActivity extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel beginBtn;
+    private javax.swing.JTextPane descripcionTxt;
     private javax.swing.JLabel flechaLeft;
     private javax.swing.JLabel flechaRight;
     private javax.swing.JLabel icon;
@@ -343,7 +354,6 @@ public class simulatorActivity extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JTextPane jTextPane2;
     private javax.swing.JLabel lFondo;
     private javax.swing.JLabel principalImg;
     private javax.swing.JLabel rFondo;
