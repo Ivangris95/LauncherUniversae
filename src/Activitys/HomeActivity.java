@@ -1,9 +1,8 @@
 package Activitys;
 
-<<<<<<< HEAD
-=======
+
 import java.awt.Cursor;
->>>>>>> bd91298f047fd7b1dd51be22904509e51837bca2
+
 import java.awt.Dimension;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -41,27 +40,22 @@ public class HomeActivity extends javax.swing.JPanel {
 
                 @Override
                 public void mouseClicked(MouseEvent e) {
-<<<<<<< HEAD
 
-                    padre.iniciarSimulacionYMostrarPanel(0);
-                    System.out.println("simulador1");
-=======
                     padre.iniciarSimulacionYMostrarPanel(index);
 
->>>>>>> bd91298f047fd7b1dd51be22904509e51837bca2
+
                 }
 
                 @Override
                 public void mouseEntered(MouseEvent e) {
                     utility.SetImageLabel(simuladores[index], urlHome, dimensionMiniaturaHover);
-<<<<<<< HEAD
-=======
+
                     System.out.println("hola mundo");
                     Cursor handCursor = Cursor.getPredefinedCursor(Cursor.HAND_CURSOR);
                     simuladores[index].setCursor(handCursor);
                     simuladores[index].revalidate();
                     simuladores[index].repaint();
->>>>>>> bd91298f047fd7b1dd51be22904509e51837bca2
+
                 }
 
                 @Override

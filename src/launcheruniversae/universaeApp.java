@@ -65,16 +65,10 @@ public class universaeApp {
     }
 
     
-<<<<<<< HEAD
-    public String getImgSimulador() {
-        return grados.get(gradosIndex).getAsJsonObject().getAsJsonArray("simuladores").get(simuladoresIndex).getAsJsonObject().get("img").getAsString();
-    }
-    
-   
-=======
+
     public String getImgSimulador(int indexSimulador) {
         return grados.get(gradosIndex).getAsJsonObject().getAsJsonArray("simuladores").get(indexSimulador).getAsJsonObject().get("img").getAsString();
     }  
->>>>>>> bd91298f047fd7b1dd51be22904509e51837bca2
+
    
 }

@@ -7,16 +7,12 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
 public class utility {
-<<<<<<< HEAD
-        
- 
-    public static void SetImageLabel(JLabel labelName , String root) {
-=======
+
 
     private static universaeApp uniApp = new universaeApp();
 
     public static void SetImageLabel(JLabel labelName, String root) {
->>>>>>> bd91298f047fd7b1dd51be22904509e51837bca2
+
         ImageIcon image = new ImageIcon(root);
         Icon icon;
 

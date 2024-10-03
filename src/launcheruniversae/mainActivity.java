@@ -17,14 +17,12 @@ public class mainActivity extends javax.swing.JFrame {
 
     public mainActivity() {
         initComponents();
-<<<<<<< HEAD
 
-=======
         
-        uniApp = new universaeApp();
+    
     
         //contentHome = new JPanel(new BorderLayout());
->>>>>>> bd91298f047fd7b1dd51be22904509e51837bca2
+
         JLabel[] escudos = {Button1, Button2, Button3, Button4, Button5, Button6, Button7, Button8, Button9, Button10, Button11, Button12, Button13, Button14};
         
         Dimension dimensionMiniaturaEscudo = new Dimension(90, 90);
@@ -83,13 +81,10 @@ public class mainActivity extends javax.swing.JFrame {
       
     }
 
-<<<<<<< HEAD
-      public void iniciarSimulacionYMostrarPanel(int numero){
-          simulatorActivity simulator = new simulatorActivity();
-=======
+
       public void iniciarSimulacionYMostrarPanel(int indexSimulador){
           simulatorActivity simulator = new simulatorActivity(indexSimulador);
->>>>>>> bd91298f047fd7b1dd51be22904509e51837bca2
+
           showPanel(simulator);
           simulator.iniciarSimulator();
           
