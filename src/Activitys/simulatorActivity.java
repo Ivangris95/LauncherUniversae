@@ -337,6 +337,11 @@ public class simulatorActivity extends javax.swing.JPanel {
         comenzarBtn.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         comenzarBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Comenzar.png"))); // NOI18N
         comenzarBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        comenzarBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                comenzarBtnMouseClicked(evt);
+            }
+        });
         add(comenzarBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 770, 263, 54));
     }// </editor-fold>//GEN-END:initComponents
 
@@ -344,6 +349,15 @@ public class simulatorActivity extends javax.swing.JPanel {
     private void flechaLeftMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_flechaLeftMousePressed
         utility.SetImageLabel(flechaLeft, "src/images/Flecha izquierda.png", dimensionBtnRightAndLeftOPressed);
     }//GEN-LAST:event_flechaLeftMousePressed
+
+    private void comenzarBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_comenzarBtnMouseClicked
+        try {
+            String rutaEjecutable = "C:/Users/loco8/OneDrive/Escritorio/QuizDemo/QuizDemo.exe";
+            Runtime.getRuntime().exec(rutaEjecutable);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }//GEN-LAST:event_comenzarBtnMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
