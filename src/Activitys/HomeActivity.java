@@ -24,11 +24,14 @@ public class HomeActivity extends javax.swing.JPanel {
     public void iniciar() {
 
         JLabel[] simuladores = {simulador1, simulador2, simulador3, simulador4, simulador5, simulador6};
-
+        
+        //Variables que definen las dimensiones de los simuladores en sus diferentes estados (normal, al pasar el ratón y al presionar).
         Dimension dimensionMiniaturas = new Dimension(380, 270);
         Dimension dimensionMiniaturaHover = new Dimension(390, 280);
         Dimension dimensionMiniaturaPressed = new Dimension(375, 265);
 
+        
+        //Este fragmento de código itera sobre un array de etiquetas JLabel llamadas simuladores y configura cada una de ellas para que responda a eventos del mouse y muestre una imagen correspondiente.
         for (int i = 0; i < simuladores.length; i++) {
 
             String urlHome = "src/images/Grado" + i + ".png";

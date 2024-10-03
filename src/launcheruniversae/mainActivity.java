@@ -21,25 +21,31 @@ public class mainActivity extends javax.swing.JFrame {
         
     
     
-        //contentHome = new JPanel(new BorderLayout());
-
+   
+        //Array de JLabel 
         JLabel[] escudos = {Button1, Button2, Button3, Button4, Button5, Button6, Button7, Button8, Button9, Button10, Button11, Button12, Button13, Button14};
         
+        //Variables que definen las dimensiones de los escudos en sus diferentes estados (normal, al pasar el ratón y al presionar).
         Dimension dimensionMiniaturaEscudo = new Dimension(90, 90);
         Dimension dimensionMiniaturaEscudoHover = new Dimension(95, 95);
         Dimension dimensionMiniaturaPressed = new Dimension(85, 85);
         
         
         for(int i = 0; i < escudos.length; i++) {
+            //Ruta de las imágenes de los escudos.
           String url = "src/images/LauncherButton" + i + ".png";
           
+          // Carga las imágenes y establece las dimensiones de los escudos.
           utility.SetImageLabel(escudos[i], url, dimensionMiniaturaEscudo);
           escudos[i].setPreferredSize(new Dimension(90, 90));
           
           final int index = i;
           
+          
+      
           escudos[i].addMouseListener(new MouseAdapter(){
               
+            // Código que se ejecutará cuando se haga clic en el escudo
             @Override
             public void mouseClicked(MouseEvent e) {
                 HomeActivity home = new HomeActivity();
@@ -48,21 +54,25 @@ public class mainActivity extends javax.swing.JFrame {
                 home.iniciar();
             }
               
+            // Código que se ejecutará cuando el cursor entre en el escudo
             @Override
             public void mouseEntered(MouseEvent e) {
                 utility.SetImageLabel(escudos[index], url, dimensionMiniaturaEscudoHover);
             }
             
+            // Código que se ejecutará cuando el cursor sale del escudo
             @Override
             public void mouseExited(MouseEvent e) {
                 utility.SetImageLabel(escudos[index], url, dimensionMiniaturaEscudo);
             }
             
+            // Código que se ejecutará cuando el cursor presiona en el escudo
             @Override
             public void mousePressed(MouseEvent e) {
                 utility.SetImageLabel(escudos[index], url, dimensionMiniaturaPressed);
             }
             
+            // Código que se ejecutará cuando el cursor al soltar en el escudo.
             @Override
             public void mouseReleased(MouseEvent e){
                  utility.SetImageLabel(escudos[index], url, dimensionMiniaturaEscudo);
@@ -73,9 +83,12 @@ public class mainActivity extends javax.swing.JFrame {
         };
     
        
+        //Se instacia un nuevo obejeto de la clase HomeActivity y se alamcena en una variable home.
         HomeActivity home = new HomeActivity();
         setPadre(home);
+        //Inicialización de la actividad
         home.iniciar();
+        //se encarga de mostrar la actividad home en la interfaz de usuario.
         showPanel(home);
         
       
