@@ -9,99 +9,93 @@ import java.awt.event.MouseEvent;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-
-
-
 public class mainActivity extends javax.swing.JFrame {
-    
-         
+
+    private universaeApp uniApp;
+    private int indexGrado = 0;
+
     public mainActivity() {
         initComponents();
-    
+
+        uniApp = new universaeApp();
+
         //contentHome = new JPanel(new BorderLayout());
         JLabel[] escudos = {Button1, Button2, Button3, Button4, Button5, Button6, Button7, Button8, Button9, Button10, Button11, Button12, Button13, Button14};
-        
+
         Dimension dimensionMiniaturaEscudo = new Dimension(90, 90);
         Dimension dimensionMiniaturaEscudoHover = new Dimension(95, 95);
         Dimension dimensionMiniaturaPressed = new Dimension(85, 85);
-        
-        
-        for(int i = 0; i < escudos.length; i++) {
-          String url = "src/images/LauncherButton" + i + ".png";
-          
-          utility.SetImageLabel(escudos[i], url, dimensionMiniaturaEscudo);
-          escudos[i].setPreferredSize(new Dimension(90, 90));
-          
-          final int index = i;
-          
-          escudos[i].addMouseListener(new MouseAdapter(){
-              
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                HomeActivity home = new HomeActivity();
-                setPadre(home);
-                showPanel(home);
-                home.iniciar();
-            }
-              
-            @Override
-            public void mouseEntered(MouseEvent e) {
-                utility.SetImageLabel(escudos[index], url, dimensionMiniaturaEscudoHover);
-            }
-            
-            @Override
-            public void mouseExited(MouseEvent e) {
-                utility.SetImageLabel(escudos[index], url, dimensionMiniaturaEscudo);
-            }
-            
-            @Override
-            public void mousePressed(MouseEvent e) {
-                utility.SetImageLabel(escudos[index], url, dimensionMiniaturaPressed);
-            }
-            
-            @Override
-            public void mouseReleased(MouseEvent e){
-                 utility.SetImageLabel(escudos[index], url, dimensionMiniaturaEscudo);
-            }
 
-          }); 
-        
+        for (int i = 0; i < escudos.length; i++) {
+            String url = "src/images/LauncherButton" + i + ".png";
+
+            utility.SetImageLabel(escudos[i], url, dimensionMiniaturaEscudo);
+            escudos[i].setPreferredSize(new Dimension(90, 90));
+
+            final int index = i;
+
+            escudos[i].addMouseListener(new MouseAdapter() {
+
+                @Override
+                public void mouseClicked(MouseEvent e) {
+                    indexGrado = index;
+                    HomeActivity home = new HomeActivity(index);
+                    setPadre(home);
+                    showPanel(home);
+                    home.iniciar();
+                }
+
+                @Override
+                public void mouseEntered(MouseEvent e) {
+                    utility.SetImageLabel(escudos[index], url, dimensionMiniaturaEscudoHover);
+                }
+
+                @Override
+                public void mouseExited(MouseEvent e) {
+                    utility.SetImageLabel(escudos[index], url, dimensionMiniaturaEscudo);
+                }
+
+                @Override
+                public void mousePressed(MouseEvent e) {
+                    utility.SetImageLabel(escudos[index], url, dimensionMiniaturaPressed);
+                }
+
+                @Override
+                public void mouseReleased(MouseEvent e) {
+                    utility.SetImageLabel(escudos[index], url, dimensionMiniaturaEscudo);
+                }
+
+            });
+
         };
-    
-       
-        HomeActivity home = new HomeActivity();
+
+        HomeActivity home = new HomeActivity(0);
         setPadre(home);
         home.iniciar();
         showPanel(home);
-        
-      
+
     }
 
-      public void iniciarSimulacionYMostrarPanel(){
-          
-            simulatorActivity simulator = new simulatorActivity();
-            showPanel(simulator);
-            simulator.iniciarSimulator();
-            
-        }  
-        
-      
-        private void showPanel(JPanel panelName){
-            contentHome.removeAll();
-            panelName.setSize(1550, 880);
-            panelName.setLocation(0, 0);
-            
-            contentHome.add(panelName, BorderLayout.CENTER);
-            contentHome.revalidate();
-            contentHome.repaint();
-        }
-        
-        public void setPadre(HomeActivity home) {
-            home.padre = this;
-        }
-        
-        
-       
+    public void iniciarSimulacionYMostrarPanel(int indexSimulador) {
+        simulatorActivity simulator = new simulatorActivity(indexGrado, indexSimulador);
+        showPanel(simulator);
+        simulator.iniciarSimulator();
+    }
+
+    private void showPanel(JPanel panelName) {
+        contentHome.removeAll();
+        panelName.setSize(1550, 880);
+        panelName.setLocation(0, 0);
+
+        contentHome.add(panelName, BorderLayout.CENTER);
+        contentHome.revalidate();
+        contentHome.repaint();
+    }
+
+    public void setPadre(HomeActivity home) {
+        home.padre = this;
+    }
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -322,23 +316,16 @@ public class mainActivity extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    
 
-   
     public static void main(String args[]) {
-       
-       
-        
-        
+
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new mainActivity().setVisible(true);
-               
-                
-             
+
             }
-         });
-        
+        });
+
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -1,0 +1,662 @@
+{
+    "grados": [
+        {
+            "nombre": "Coordinación de emergencias y protección civil.",
+            "simuladores": [
+                {
+                    "titulo": "Embarque y Desembarque en Helicóptero",
+                    "descripcion": "Este simulador recrea de forma realista las condiciones de un helipuerto, permitiendo al usuario practicar las técnicas correctas de embarque y desembarque en un helicóptero, tanto en condiciones diurnas como nocturnas.",
+                    "imgSimulacion": "Embarque",
+                    "imgGrado": "Grado0",
+                    "direccionEjecutable": "vvvjajvj.exe"
+                },
+                {
+                    "titulo": "Protocolo ante una Hemorragia Externa",
+                    "descripcion": "Adquiere las habilidades necesarias para controlar hemorragias externas en diferentes escenarios y con distintos tipos de heridas. Practica el uso de materiales de primeros auxilios y toma decisiones rápidas bajo presión.",
+                    "imgSimulacion": "Hemorragia",
+                    "imgGrado": "Grado1",
+                    "direccionEjecutable": "dkllkasjf.exe"
+                }, 
+                {
+                    "titulo": "Maniobras de Extinción según la Instalación",
+                    "descripcion": "Aprende a combatir incendios en una variedad de entornos, desde edificios hasta instalaciones industriales. Domina el uso de equipos de extinción y desarrolla estrategias efectivas para controlar el fuego.",
+                    "imgSimulacion": "Extincion",
+                    "imgGrado": "Grado2",
+                    "direccionEjecutable": "jbzxjvfsd.exe"
+                },
+                {
+                    "titulo": "Tipología y Características de los EPI",
+                    "descripcion": "Familiarízate con los diferentes tipos de equipos de protección individual y su uso correcto. Identifica el EPI adecuado para cada situación y aprende a mantenerlo en óptimas condiciones.",
+                    "imgSimulacion": "EPIS",
+                    "imgGrado": "Grado3",
+                    "direccionEjecutable": "cjvzxkjv.exe"
+                },
+                {
+                    "titulo": "Señalización a Helicóptero desde Tierra",
+                    "descripcion": "Comunica de manera efectiva con un helicóptero utilizando señales manuales. Aprende los códigos y protocolos de señalización para solicitar rescate o asistencia en diversas situaciones.",
+                    "imgSimulacion": "Helicoptero",
+                    "imgGrado": "Grado4",
+                    "direccionEjecutable": "sczxberb.exe"
+                }, 
+                {
+                    "titulo": "Rescate en Ascensores",
+                    "descripcion": "Adquiere las habilidades necesarias para rescatar personas atrapadas en ascensores en caso de emergencia. Practica el uso de herramientas especializadas y sigue los procedimientos de seguridad establecidos.",
+                    "imgSimulacion": "Ascensor",
+                    "imgGrado": "Grado5",
+                    "direccionEjecutable": "ccbrfio.exe"
+                }
+            ]
+        },
+        {
+            "nombre": "Coordinación de emergencias y protección civil.",
+            "simuladores": [
+                {
+                    "titulo": "Embarque y Desembarque en Helicóptero",
+                    "descripcion": "Este simulador recrea de forma realista las condiciones de un helipuerto, permitiendo al usuario practicar las técnicas correctas de embarque y desembarque en un helicóptero, tanto en condiciones diurnas como nocturnas.",
+                    "imgSimulacion": "Embarque",
+                    "imgGrado": "Grado1",
+                    "direccionEjecutable": "vvvjajvj.exe"
+                },
+                {
+                    "titulo": "Protocolo ante una Hemorragia Externa",
+                    "descripcion": "Adquiere las habilidades necesarias para controlar hemorragias externas en diferentes escenarios y con distintos tipos de heridas. Practica el uso de materiales de primeros auxilios y toma decisiones rápidas bajo presión.",
+                    "imgSimulacion": "Hemorragia",
+                    "imgGrado": "Grado2",
+                    "direccionEjecutable": "dkllkasjf.exe"
+                }, 
+                {
+                    "titulo": "Maniobras de Extinción según la Instalación",
+                    "descripcion": "Aprende a combatir incendios en una variedad de entornos, desde edificios hasta instalaciones industriales. Domina el uso de equipos de extinción y desarrolla estrategias efectivas para controlar el fuego.",
+                    "imgSimulacion": "Extincion",
+                    "imgGrado": "Grado3",
+                    "direccionEjecutable": "jbzxjvfsd.exe"
+                },
+                {
+                    "titulo": "Tipología y Características de los EPI",
+                    "descripcion": "Familiarízate con los diferentes tipos de equipos de protección individual y su uso correcto. Identifica el EPI adecuado para cada situación y aprende a mantenerlo en óptimas condiciones.",
+                    "imgSimulacion": "EPIS",
+                    "imgGrado": "Grado4",
+                    "direccionEjecutable": "cjvzxkjv.exe"
+                },
+                {
+                    "titulo": "Señalización a Helicóptero desde Tierra",
+                    "descripcion": "Comunica de manera efectiva con un helicóptero utilizando señales manuales. Aprende los códigos y protocolos de señalización para solicitar rescate o asistencia en diversas situaciones.",
+                    "imgSimulacion": "Helicoptero",
+                    "imgGrado": "Grado5",
+                    "direccionEjecutable": "sczxberb.exe"
+                }, 
+                {
+                    "titulo": "Rescate en Ascensores",
+                    "descripcion": "Adquiere las habilidades necesarias para rescatar personas atrapadas en ascensores en caso de emergencia. Practica el uso de herramientas especializadas y sigue los procedimientos de seguridad establecidos.",
+                    "imgSimulacion": "Ascensor",
+                    "imgGrado": "Grado0",
+                    "direccionEjecutable": "ccbrfio.exe"
+                }
+            ]
+        },
+        {
+            "nombre": "Coordinación de emergencias y protección civil.",
+            "simuladores": [
+                {
+                    "titulo": "Embarque y Desembarque en Helicóptero",
+                    "descripcion": "Este simulador recrea de forma realista las condiciones de un helipuerto, permitiendo al usuario practicar las técnicas correctas de embarque y desembarque en un helicóptero, tanto en condiciones diurnas como nocturnas.",
+                    "imgSimulacion": "Embarque",
+                    "imgGrado": "Grado2",
+                    "direccionEjecutable": "vvvjajvj.exe"
+                },
+                {
+                    "titulo": "Protocolo ante una Hemorragia Externa",
+                    "descripcion": "Adquiere las habilidades necesarias para controlar hemorragias externas en diferentes escenarios y con distintos tipos de heridas. Practica el uso de materiales de primeros auxilios y toma decisiones rápidas bajo presión.",
+                    "imgSimulacion": "Hemorragia",
+                    "imgGrado": "Grado3",
+                    "direccionEjecutable": "dkllkasjf.exe"
+                }, 
+                {
+                    "titulo": "Maniobras de Extinción según la Instalación",
+                    "descripcion": "Aprende a combatir incendios en una variedad de entornos, desde edificios hasta instalaciones industriales. Domina el uso de equipos de extinción y desarrolla estrategias efectivas para controlar el fuego.",
+                    "imgSimulacion": "Extincion",
+                    "imgGrado": "Grado4",
+                    "direccionEjecutable": "jbzxjvfsd.exe"
+                },
+                {
+                    "titulo": "Tipología y Características de los EPI",
+                    "descripcion": "Familiarízate con los diferentes tipos de equipos de protección individual y su uso correcto. Identifica el EPI adecuado para cada situación y aprende a mantenerlo en óptimas condiciones.",
+                    "imgSimulacion": "EPIS",
+                    "imgGrado": "Grado5",
+                    "direccionEjecutable": "cjvzxkjv.exe"
+                },
+                {
+                    "titulo": "Señalización a Helicóptero desde Tierra",
+                    "descripcion": "Comunica de manera efectiva con un helicóptero utilizando señales manuales. Aprende los códigos y protocolos de señalización para solicitar rescate o asistencia en diversas situaciones.",
+                    "imgSimulacion": "Helicoptero",
+                    "imgGrado": "Grado0",
+                    "direccionEjecutable": "sczxberb.exe"
+                }, 
+                {
+                    "titulo": "Rescate en Ascensores",
+                    "descripcion": "Adquiere las habilidades necesarias para rescatar personas atrapadas en ascensores en caso de emergencia. Practica el uso de herramientas especializadas y sigue los procedimientos de seguridad establecidos.",
+                    "imgSimulacion": "Ascensor",
+                    "imgGrado": "Grado1",
+                    "direccionEjecutable": "ccbrfio.exe"
+                }
+            ]
+        },
+        {
+            "nombre": "Coordinación de emergencias y protección civil.",
+            "simuladores": [
+                {
+                    "titulo": "Embarque y Desembarque en Helicóptero",
+                    "descripcion": "Este simulador recrea de forma realista las condiciones de un helipuerto, permitiendo al usuario practicar las técnicas correctas de embarque y desembarque en un helicóptero, tanto en condiciones diurnas como nocturnas.",
+                    "imgSimulacion": "Embarque",
+                    "imgGrado": "Grado3",
+                    "direccionEjecutable": "vvvjajvj.exe"
+                },
+                {
+                    "titulo": "Protocolo ante una Hemorragia Externa",
+                    "descripcion": "Adquiere las habilidades necesarias para controlar hemorragias externas en diferentes escenarios y con distintos tipos de heridas. Practica el uso de materiales de primeros auxilios y toma decisiones rápidas bajo presión.",
+                    "imgSimulacion": "Hemorragia",
+                    "imgGrado": "Grado4",
+                    "direccionEjecutable": "dkllkasjf.exe"
+                }, 
+                {
+                    "titulo": "Maniobras de Extinción según la Instalación",
+                    "descripcion": "Aprende a combatir incendios en una variedad de entornos, desde edificios hasta instalaciones industriales. Domina el uso de equipos de extinción y desarrolla estrategias efectivas para controlar el fuego.",
+                    "imgSimulacion": "Extincion",
+                    "imgGrado": "Grado5",
+                    "direccionEjecutable": "jbzxjvfsd.exe"
+                },
+                {
+                    "titulo": "Tipología y Características de los EPI",
+                    "descripcion": "Familiarízate con los diferentes tipos de equipos de protección individual y su uso correcto. Identifica el EPI adecuado para cada situación y aprende a mantenerlo en óptimas condiciones.",
+                    "imgSimulacion": "EPIS",
+                    "imgGrado": "Grado0",
+                    "direccionEjecutable": "cjvzxkjv.exe"
+                },
+                {
+                    "titulo": "Señalización a Helicóptero desde Tierra",
+                    "descripcion": "Comunica de manera efectiva con un helicóptero utilizando señales manuales. Aprende los códigos y protocolos de señalización para solicitar rescate o asistencia en diversas situaciones.",
+                    "imgSimulacion": "Helicoptero",
+                    "imgGrado": "Grado1",
+                    "direccionEjecutable": "sczxberb.exe"
+                }, 
+                {
+                    "titulo": "Rescate en Ascensores",
+                    "descripcion": "Adquiere las habilidades necesarias para rescatar personas atrapadas en ascensores en caso de emergencia. Practica el uso de herramientas especializadas y sigue los procedimientos de seguridad establecidos.",
+                    "imgSimulacion": "Ascensor",
+                    "imgGrado": "Grado2",
+                    "direccionEjecutable": "ccbrfio.exe"
+                }
+            ]
+        },
+        {
+            "nombre": "Coordinación de emergencias y protección civil.",
+            "simuladores": [
+                {
+                    "titulo": "Embarque y Desembarque en Helicóptero",
+                    "descripcion": "Este simulador recrea de forma realista las condiciones de un helipuerto, permitiendo al usuario practicar las técnicas correctas de embarque y desembarque en un helicóptero, tanto en condiciones diurnas como nocturnas.",
+                    "imgSimulacion": "Embarque",
+                    "imgGrado": "Grado4",
+                    "direccionEjecutable": "vvvjajvj.exe"
+                },
+                {
+                    "titulo": "Protocolo ante una Hemorragia Externa",
+                    "descripcion": "Adquiere las habilidades necesarias para controlar hemorragias externas en diferentes escenarios y con distintos tipos de heridas. Practica el uso de materiales de primeros auxilios y toma decisiones rápidas bajo presión.",
+                    "imgSimulacion": "Hemorragia",
+                    "imgGrado": "Grado5",
+                    "direccionEjecutable": "dkllkasjf.exe"
+                }, 
+                {
+                    "titulo": "Maniobras de Extinción según la Instalación",
+                    "descripcion": "Aprende a combatir incendios en una variedad de entornos, desde edificios hasta instalaciones industriales. Domina el uso de equipos de extinción y desarrolla estrategias efectivas para controlar el fuego.",
+                    "imgSimulacion": "Extincion",
+                    "imgGrado": "Grado0",
+                    "direccionEjecutable": "jbzxjvfsd.exe"
+                },
+                {
+                    "titulo": "Tipología y Características de los EPI",
+                    "descripcion": "Familiarízate con los diferentes tipos de equipos de protección individual y su uso correcto. Identifica el EPI adecuado para cada situación y aprende a mantenerlo en óptimas condiciones.",
+                    "imgSimulacion": "EPIS",
+                    "imgGrado": "Grado1",
+                    "direccionEjecutable": "cjvzxkjv.exe"
+                },
+                {
+                    "titulo": "Señalización a Helicóptero desde Tierra",
+                    "descripcion": "Comunica de manera efectiva con un helicóptero utilizando señales manuales. Aprende los códigos y protocolos de señalización para solicitar rescate o asistencia en diversas situaciones.",
+                    "imgSimulacion": "Helicoptero",
+                    "imgGrado": "Grado2",
+                    "direccionEjecutable": "sczxberb.exe"
+                }, 
+                {
+                    "titulo": "Rescate en Ascensores",
+                    "descripcion": "Adquiere las habilidades necesarias para rescatar personas atrapadas en ascensores en caso de emergencia. Practica el uso de herramientas especializadas y sigue los procedimientos de seguridad establecidos.",
+                    "imgSimulacion": "Ascensor",
+                    "imgGrado": "Grado3",
+                    "direccionEjecutable": "ccbrfio.exe"
+                }
+            ]
+        },
+        {
+            "nombre": "Coordinación de emergencias y protección civil.",
+            "simuladores": [
+                {
+                    "titulo": "Embarque y Desembarque en Helicóptero",
+                    "descripcion": "Este simulador recrea de forma realista las condiciones de un helipuerto, permitiendo al usuario practicar las técnicas correctas de embarque y desembarque en un helicóptero, tanto en condiciones diurnas como nocturnas.",
+                    "imgSimulacion": "Embarque",
+                    "imgGrado": "Grado5",
+                    "direccionEjecutable": "vvvjajvj.exe"
+                },
+                {
+                    "titulo": "Protocolo ante una Hemorragia Externa",
+                    "descripcion": "Adquiere las habilidades necesarias para controlar hemorragias externas en diferentes escenarios y con distintos tipos de heridas. Practica el uso de materiales de primeros auxilios y toma decisiones rápidas bajo presión.",
+                    "imgSimulacion": "Hemorragia",
+                    "imgGrado": "Grado0",
+                    "direccionEjecutable": "dkllkasjf.exe"
+                }, 
+                {
+                    "titulo": "Maniobras de Extinción según la Instalación",
+                    "descripcion": "Aprende a combatir incendios en una variedad de entornos, desde edificios hasta instalaciones industriales. Domina el uso de equipos de extinción y desarrolla estrategias efectivas para controlar el fuego.",
+                    "imgSimulacion": "Extincion",
+                    "imgGrado": "Grado1",
+                    "direccionEjecutable": "jbzxjvfsd.exe"
+                },
+                {
+                    "titulo": "Tipología y Características de los EPI",
+                    "descripcion": "Familiarízate con los diferentes tipos de equipos de protección individual y su uso correcto. Identifica el EPI adecuado para cada situación y aprende a mantenerlo en óptimas condiciones.",
+                    "imgSimulacion": "EPIS",
+                    "imgGrado": "Grado2",
+                    "direccionEjecutable": "cjvzxkjv.exe"
+                },
+                {
+                    "titulo": "Señalización a Helicóptero desde Tierra",
+                    "descripcion": "Comunica de manera efectiva con un helicóptero utilizando señales manuales. Aprende los códigos y protocolos de señalización para solicitar rescate o asistencia en diversas situaciones.",
+                    "imgSimulacion": "Helicoptero",
+                    "imgGrado": "Grado3",
+                    "direccionEjecutable": "sczxberb.exe"
+                }, 
+                {
+                    "titulo": "Rescate en Ascensores",
+                    "descripcion": "Adquiere las habilidades necesarias para rescatar personas atrapadas en ascensores en caso de emergencia. Practica el uso de herramientas especializadas y sigue los procedimientos de seguridad establecidos.",
+                    "imgSimulacion": "Ascensor",
+                    "imgGrado": "Grado4",
+                    "direccionEjecutable": "ccbrfio.exe"
+                }
+            ]
+        },
+        {
+            "nombre": "Coordinación de emergencias y protección civil.",
+            "simuladores": [
+                {
+                    "titulo": "Embarque y Desembarque en Helicóptero",
+                    "descripcion": "Este simulador recrea de forma realista las condiciones de un helipuerto, permitiendo al usuario practicar las técnicas correctas de embarque y desembarque en un helicóptero, tanto en condiciones diurnas como nocturnas.",
+                    "imgSimulacion": "Embarque",
+                    "imgGrado": "Grado0",
+                    "direccionEjecutable": "vvvjajvj.exe"
+                },
+                {
+                    "titulo": "Protocolo ante una Hemorragia Externa",
+                    "descripcion": "Adquiere las habilidades necesarias para controlar hemorragias externas en diferentes escenarios y con distintos tipos de heridas. Practica el uso de materiales de primeros auxilios y toma decisiones rápidas bajo presión.",
+                    "imgSimulacion": "Hemorragia",
+                    "imgGrado": "Grado2",
+                    "direccionEjecutable": "dkllkasjf.exe"
+                }, 
+                {
+                    "titulo": "Maniobras de Extinción según la Instalación",
+                    "descripcion": "Aprende a combatir incendios en una variedad de entornos, desde edificios hasta instalaciones industriales. Domina el uso de equipos de extinción y desarrolla estrategias efectivas para controlar el fuego.",
+                    "imgSimulacion": "Extincion",
+                    "imgGrado": "Grado2",
+                    "direccionEjecutable": "jbzxjvfsd.exe"
+                },
+                {
+                    "titulo": "Tipología y Características de los EPI",
+                    "descripcion": "Familiarízate con los diferentes tipos de equipos de protección individual y su uso correcto. Identifica el EPI adecuado para cada situación y aprende a mantenerlo en óptimas condiciones.",
+                    "imgSimulacion": "EPIS",
+                    "imgGrado": "Grado3",
+                    "direccionEjecutable": "cjvzxkjv.exe"
+                },
+                {
+                    "titulo": "Señalización a Helicóptero desde Tierra",
+                    "descripcion": "Comunica de manera efectiva con un helicóptero utilizando señales manuales. Aprende los códigos y protocolos de señalización para solicitar rescate o asistencia en diversas situaciones.",
+                    "imgSimulacion": "Helicoptero",
+                    "imgGrado": "Grado4",
+                    "direccionEjecutable": "sczxberb.exe"
+                }, 
+                {
+                    "titulo": "Rescate en Ascensores",
+                    "descripcion": "Adquiere las habilidades necesarias para rescatar personas atrapadas en ascensores en caso de emergencia. Practica el uso de herramientas especializadas y sigue los procedimientos de seguridad establecidos.",
+                    "imgSimulacion": "Ascensor",
+                    "imgGrado": "Grado5",
+                    "direccionEjecutable": "ccbrfio.exe"
+                }
+            ]
+        },
+        {
+            "nombre": "Coordinación de emergencias y protección civil.",
+            "simuladores": [
+                {
+                    "titulo": "Embarque y Desembarque en Helicóptero",
+                    "descripcion": "Este simulador recrea de forma realista las condiciones de un helipuerto, permitiendo al usuario practicar las técnicas correctas de embarque y desembarque en un helicóptero, tanto en condiciones diurnas como nocturnas.",
+                    "imgSimulacion": "Embarque",
+                    "imgGrado": "Grado1",
+                    "direccionEjecutable": "vvvjajvj.exe"
+                },
+                {
+                    "titulo": "Protocolo ante una Hemorragia Externa",
+                    "descripcion": "Adquiere las habilidades necesarias para controlar hemorragias externas en diferentes escenarios y con distintos tipos de heridas. Practica el uso de materiales de primeros auxilios y toma decisiones rápidas bajo presión.",
+                    "imgSimulacion": "Hemorragia",
+                    "imgGrado": "Grado2",
+                    "direccionEjecutable": "dkllkasjf.exe"
+                }, 
+                {
+                    "titulo": "Maniobras de Extinción según la Instalación",
+                    "descripcion": "Aprende a combatir incendios en una variedad de entornos, desde edificios hasta instalaciones industriales. Domina el uso de equipos de extinción y desarrolla estrategias efectivas para controlar el fuego.",
+                    "imgSimulacion": "Extincion",
+                    "imgGrado": "Grado3",
+                    "direccionEjecutable": "jbzxjvfsd.exe"
+                },
+                {
+                    "titulo": "Tipología y Características de los EPI",
+                    "descripcion": "Familiarízate con los diferentes tipos de equipos de protección individual y su uso correcto. Identifica el EPI adecuado para cada situación y aprende a mantenerlo en óptimas condiciones.",
+                    "imgSimulacion": "EPIS",
+                    "imgGrado": "Grado4",
+                    "direccionEjecutable": "cjvzxkjv.exe"
+                },
+                {
+                    "titulo": "Señalización a Helicóptero desde Tierra",
+                    "descripcion": "Comunica de manera efectiva con un helicóptero utilizando señales manuales. Aprende los códigos y protocolos de señalización para solicitar rescate o asistencia en diversas situaciones.",
+                    "imgSimulacion": "Helicoptero",
+                    "imgGrado": "Grado5",
+                    "direccionEjecutable": "sczxberb.exe"
+                }, 
+                {
+                    "titulo": "Rescate en Ascensores",
+                    "descripcion": "Adquiere las habilidades necesarias para rescatar personas atrapadas en ascensores en caso de emergencia. Practica el uso de herramientas especializadas y sigue los procedimientos de seguridad establecidos.",
+                    "imgSimulacion": "Ascensor",
+                    "imgGrado": "Grado0",
+                    "direccionEjecutable": "ccbrfio.exe"
+                }
+            ]
+        },
+        {
+            "nombre": "Coordinación de emergencias y protección civil.",
+            "simuladores": [
+                {
+                    "titulo": "Embarque y Desembarque en Helicóptero",
+                    "descripcion": "Este simulador recrea de forma realista las condiciones de un helipuerto, permitiendo al usuario practicar las técnicas correctas de embarque y desembarque en un helicóptero, tanto en condiciones diurnas como nocturnas.",
+                    "imgSimulacion": "Embarque",
+                    "imgGrado": "Grado2",
+                    "direccionEjecutable": "vvvjajvj.exe"
+                },
+                {
+                    "titulo": "Protocolo ante una Hemorragia Externa",
+                    "descripcion": "Adquiere las habilidades necesarias para controlar hemorragias externas en diferentes escenarios y con distintos tipos de heridas. Practica el uso de materiales de primeros auxilios y toma decisiones rápidas bajo presión.",
+                    "imgSimulacion": "Hemorragia",
+                    "imgGrado": "Grado3",
+                    "direccionEjecutable": "dkllkasjf.exe"
+                }, 
+                {
+                    "titulo": "Maniobras de Extinción según la Instalación",
+                    "descripcion": "Aprende a combatir incendios en una variedad de entornos, desde edificios hasta instalaciones industriales. Domina el uso de equipos de extinción y desarrolla estrategias efectivas para controlar el fuego.",
+                    "imgSimulacion": "Extincion",
+                    "imgGrado": "Grado4",
+                    "direccionEjecutable": "jbzxjvfsd.exe"
+                },
+                {
+                    "titulo": "Tipología y Características de los EPI",
+                    "descripcion": "Familiarízate con los diferentes tipos de equipos de protección individual y su uso correcto. Identifica el EPI adecuado para cada situación y aprende a mantenerlo en óptimas condiciones.",
+                    "imgSimulacion": "EPIS",
+                    "imgGrado": "Grado5",
+                    "direccionEjecutable": "cjvzxkjv.exe"
+                },
+                {
+                    "titulo": "Señalización a Helicóptero desde Tierra",
+                    "descripcion": "Comunica de manera efectiva con un helicóptero utilizando señales manuales. Aprende los códigos y protocolos de señalización para solicitar rescate o asistencia en diversas situaciones.",
+                    "imgSimulacion": "Helicoptero",
+                    "imgGrado": "Grado0",
+                    "direccionEjecutable": "sczxberb.exe"
+                }, 
+                {
+                    "titulo": "Rescate en Ascensores",
+                    "descripcion": "Adquiere las habilidades necesarias para rescatar personas atrapadas en ascensores en caso de emergencia. Practica el uso de herramientas especializadas y sigue los procedimientos de seguridad establecidos.",
+                    "imgSimulacion": "Ascensor",
+                    "imgGrado": "Grado1",
+                    "direccionEjecutable": "ccbrfio.exe"
+                }
+            ]
+        },
+        {
+            "nombre": "Coordinación de emergencias y protección civil.",
+            "simuladores": [
+                {
+                    "titulo": "Embarque y Desembarque en Helicóptero",
+                    "descripcion": "Este simulador recrea de forma realista las condiciones de un helipuerto, permitiendo al usuario practicar las técnicas correctas de embarque y desembarque en un helicóptero, tanto en condiciones diurnas como nocturnas.",
+                    "imgSimulacion": "Embarque",
+                    "imgGrado": "Grado3",
+                    "direccionEjecutable": "vvvjajvj.exe"
+                },
+                {
+                    "titulo": "Protocolo ante una Hemorragia Externa",
+                    "descripcion": "Adquiere las habilidades necesarias para controlar hemorragias externas en diferentes escenarios y con distintos tipos de heridas. Practica el uso de materiales de primeros auxilios y toma decisiones rápidas bajo presión.",
+                    "imgSimulacion": "Hemorragia",
+                    "imgGrado": "Grado4",
+                    "direccionEjecutable": "dkllkasjf.exe"
+                }, 
+                {
+                    "titulo": "Maniobras de Extinción según la Instalación",
+                    "descripcion": "Aprende a combatir incendios en una variedad de entornos, desde edificios hasta instalaciones industriales. Domina el uso de equipos de extinción y desarrolla estrategias efectivas para controlar el fuego.",
+                    "imgSimulacion": "Extincion",
+                    "imgGrado": "Grado5",
+                    "direccionEjecutable": "jbzxjvfsd.exe"
+                },
+                {
+                    "titulo": "Tipología y Características de los EPI",
+                    "descripcion": "Familiarízate con los diferentes tipos de equipos de protección individual y su uso correcto. Identifica el EPI adecuado para cada situación y aprende a mantenerlo en óptimas condiciones.",
+                    "imgSimulacion": "EPIS",
+                    "imgGrado": "Grado0",
+                    "direccionEjecutable": "cjvzxkjv.exe"
+                },
+                {
+                    "titulo": "Señalización a Helicóptero desde Tierra",
+                    "descripcion": "Comunica de manera efectiva con un helicóptero utilizando señales manuales. Aprende los códigos y protocolos de señalización para solicitar rescate o asistencia en diversas situaciones.",
+                    "imgSimulacion": "Helicoptero",
+                    "imgGrado": "Grado1",
+                    "direccionEjecutable": "sczxberb.exe"
+                }, 
+                {
+                    "titulo": "Rescate en Ascensores",
+                    "descripcion": "Adquiere las habilidades necesarias para rescatar personas atrapadas en ascensores en caso de emergencia. Practica el uso de herramientas especializadas y sigue los procedimientos de seguridad establecidos.",
+                    "imgSimulacion": "Ascensor",
+                    "imgGrado": "Grado2",
+                    "direccionEjecutable": "ccbrfio.exe"
+                }
+            ]
+        },
+        {
+            "nombre": "Coordinación de emergencias y protección civil.",
+            "simuladores": [
+                {
+                    "titulo": "Embarque y Desembarque en Helicóptero",
+                    "descripcion": "Este simulador recrea de forma realista las condiciones de un helipuerto, permitiendo al usuario practicar las técnicas correctas de embarque y desembarque en un helicóptero, tanto en condiciones diurnas como nocturnas.",
+                    "imgSimulacion": "Embarque",
+                    "imgGrado": "Grado4",
+                    "direccionEjecutable": "vvvjajvj.exe"
+                },
+                {
+                    "titulo": "Protocolo ante una Hemorragia Externa",
+                    "descripcion": "Adquiere las habilidades necesarias para controlar hemorragias externas en diferentes escenarios y con distintos tipos de heridas. Practica el uso de materiales de primeros auxilios y toma decisiones rápidas bajo presión.",
+                    "imgSimulacion": "Hemorragia",
+                    "imgGrado": "Grado5",
+                    "direccionEjecutable": "dkllkasjf.exe"
+                }, 
+                {
+                    "titulo": "Maniobras de Extinción según la Instalación",
+                    "descripcion": "Aprende a combatir incendios en una variedad de entornos, desde edificios hasta instalaciones industriales. Domina el uso de equipos de extinción y desarrolla estrategias efectivas para controlar el fuego.",
+                    "imgSimulacion": "Extincion",
+                    "imgGrado": "Grado0",
+                    "direccionEjecutable": "jbzxjvfsd.exe"
+                },
+                {
+                    "titulo": "Tipología y Características de los EPI",
+                    "descripcion": "Familiarízate con los diferentes tipos de equipos de protección individual y su uso correcto. Identifica el EPI adecuado para cada situación y aprende a mantenerlo en óptimas condiciones.",
+                    "imgSimulacion": "EPIS",
+                    "imgGrado": "Grado1",
+                    "direccionEjecutable": "cjvzxkjv.exe"
+                },
+                {
+                    "titulo": "Señalización a Helicóptero desde Tierra",
+                    "descripcion": "Comunica de manera efectiva con un helicóptero utilizando señales manuales. Aprende los códigos y protocolos de señalización para solicitar rescate o asistencia en diversas situaciones.",
+                    "imgSimulacion": "Helicoptero",
+                    "imgGrado": "Grado2",
+                    "direccionEjecutable": "sczxberb.exe"
+                }, 
+                {
+                    "titulo": "Rescate en Ascensores",
+                    "descripcion": "Adquiere las habilidades necesarias para rescatar personas atrapadas en ascensores en caso de emergencia. Practica el uso de herramientas especializadas y sigue los procedimientos de seguridad establecidos.",
+                    "imgSimulacion": "Ascensor",
+                    "imgGrado": "Grado3",
+                    "direccionEjecutable": "ccbrfio.exe"
+                }
+            ]
+        },
+        {
+            "nombre": "Coordinación de emergencias y protección civil.",
+            "simuladores": [
+                {
+                    "titulo": "Embarque y Desembarque en Helicóptero",
+                    "descripcion": "Este simulador recrea de forma realista las condiciones de un helipuerto, permitiendo al usuario practicar las técnicas correctas de embarque y desembarque en un helicóptero, tanto en condiciones diurnas como nocturnas.",
+                    "imgSimulacion": "Embarque",
+                    "imgGrado": "Grado5",
+                    "direccionEjecutable": "vvvjajvj.exe"
+                },
+                {
+                    "titulo": "Protocolo ante una Hemorragia Externa",
+                    "descripcion": "Adquiere las habilidades necesarias para controlar hemorragias externas en diferentes escenarios y con distintos tipos de heridas. Practica el uso de materiales de primeros auxilios y toma decisiones rápidas bajo presión.",
+                    "imgSimulacion": "Hemorragia",
+                    "imgGrado": "Grado0",
+                    "direccionEjecutable": "dkllkasjf.exe"
+                }, 
+                {
+                    "titulo": "Maniobras de Extinción según la Instalación",
+                    "descripcion": "Aprende a combatir incendios en una variedad de entornos, desde edificios hasta instalaciones industriales. Domina el uso de equipos de extinción y desarrolla estrategias efectivas para controlar el fuego.",
+                    "imgSimulacion": "Extincion",
+                    "imgGrado": "Grado1",
+                    "direccionEjecutable": "jbzxjvfsd.exe"
+                },
+                {
+                    "titulo": "Tipología y Características de los EPI",
+                    "descripcion": "Familiarízate con los diferentes tipos de equipos de protección individual y su uso correcto. Identifica el EPI adecuado para cada situación y aprende a mantenerlo en óptimas condiciones.",
+                    "imgSimulacion": "EPIS",
+                    "imgGrado": "Grado2",
+                    "direccionEjecutable": "cjvzxkjv.exe"
+                },
+                {
+                    "titulo": "Señalización a Helicóptero desde Tierra",
+                    "descripcion": "Comunica de manera efectiva con un helicóptero utilizando señales manuales. Aprende los códigos y protocolos de señalización para solicitar rescate o asistencia en diversas situaciones.",
+                    "imgSimulacion": "Helicoptero",
+                    "imgGrado": "Grado3",
+                    "direccionEjecutable": "sczxberb.exe"
+                }, 
+                {
+                    "titulo": "Rescate en Ascensores",
+                    "descripcion": "Adquiere las habilidades necesarias para rescatar personas atrapadas en ascensores en caso de emergencia. Practica el uso de herramientas especializadas y sigue los procedimientos de seguridad establecidos.",
+                    "imgSimulacion": "Ascensor",
+                    "imgGrado": "Grado4",
+                    "direccionEjecutable": "ccbrfio.exe"
+                }
+            ]
+        },
+        {
+            "nombre": "Coordinación de emergencias y protección civil.",
+            "simuladores": [
+                {
+                    "titulo": "Embarque y Desembarque en Helicóptero",
+                    "descripcion": "Este simulador recrea de forma realista las condiciones de un helipuerto, permitiendo al usuario practicar las técnicas correctas de embarque y desembarque en un helicóptero, tanto en condiciones diurnas como nocturnas.",
+                    "imgSimulacion": "Embarque",
+                    "imgGrado": "Grado0",
+                    "direccionEjecutable": "vvvjajvj.exe"
+                },
+                {
+                    "titulo": "Protocolo ante una Hemorragia Externa",
+                    "descripcion": "Adquiere las habilidades necesarias para controlar hemorragias externas en diferentes escenarios y con distintos tipos de heridas. Practica el uso de materiales de primeros auxilios y toma decisiones rápidas bajo presión.",
+                    "imgSimulacion": "Hemorragia",
+                    "imgGrado": "Grado2",
+                    "direccionEjecutable": "dkllkasjf.exe"
+                }, 
+                {
+                    "titulo": "Maniobras de Extinción según la Instalación",
+                    "descripcion": "Aprende a combatir incendios en una variedad de entornos, desde edificios hasta instalaciones industriales. Domina el uso de equipos de extinción y desarrolla estrategias efectivas para controlar el fuego.",
+                    "imgSimulacion": "Extincion",
+                    "imgGrado": "Grado2",
+                    "direccionEjecutable": "jbzxjvfsd.exe"
+                },
+                {
+                    "titulo": "Tipología y Características de los EPI",
+                    "descripcion": "Familiarízate con los diferentes tipos de equipos de protección individual y su uso correcto. Identifica el EPI adecuado para cada situación y aprende a mantenerlo en óptimas condiciones.",
+                    "imgSimulacion": "EPIS",
+                    "imgGrado": "Grado3",
+                    "direccionEjecutable": "cjvzxkjv.exe"
+                },
+                {
+                    "titulo": "Señalización a Helicóptero desde Tierra",
+                    "descripcion": "Comunica de manera efectiva con un helicóptero utilizando señales manuales. Aprende los códigos y protocolos de señalización para solicitar rescate o asistencia en diversas situaciones.",
+                    "imgSimulacion": "Helicoptero",
+                    "imgGrado": "Grado4",
+                    "direccionEjecutable": "sczxberb.exe"
+                }, 
+                {
+                    "titulo": "Rescate en Ascensores",
+                    "descripcion": "Adquiere las habilidades necesarias para rescatar personas atrapadas en ascensores en caso de emergencia. Practica el uso de herramientas especializadas y sigue los procedimientos de seguridad establecidos.",
+                    "imgSimulacion": "Ascensor",
+                    "imgGrado": "Grado5",
+                    "direccionEjecutable": "ccbrfio.exe"
+                }
+            ]
+        },
+        {
+            "nombre": "Coordinación de emergencias y protección civil.",
+            "simuladores": [
+                {
+                    "titulo": "Embarque y Desembarque en Helicóptero",
+                    "descripcion": "Este simulador recrea de forma realista las condiciones de un helipuerto, permitiendo al usuario practicar las técnicas correctas de embarque y desembarque en un helicóptero, tanto en condiciones diurnas como nocturnas.",
+                    "imgSimulacion": "Embarque",
+                    "imgGrado": "Grado1",
+                    "direccionEjecutable": "vvvjajvj.exe"
+                },
+                {
+                    "titulo": "Protocolo ante una Hemorragia Externa",
+                    "descripcion": "Adquiere las habilidades necesarias para controlar hemorragias externas en diferentes escenarios y con distintos tipos de heridas. Practica el uso de materiales de primeros auxilios y toma decisiones rápidas bajo presión.",
+                    "imgSimulacion": "Hemorragia",
+                    "imgGrado": "Grado2",
+                    "direccionEjecutable": "dkllkasjf.exe"
+                }, 
+                {
+                    "titulo": "Maniobras de Extinción según la Instalación",
+                    "descripcion": "Aprende a combatir incendios en una variedad de entornos, desde edificios hasta instalaciones industriales. Domina el uso de equipos de extinción y desarrolla estrategias efectivas para controlar el fuego.",
+                    "imgSimulacion": "Extincion",
+                    "imgGrado": "Grado3",
+                    "direccionEjecutable": "jbzxjvfsd.exe"
+                },
+                {
+                    "titulo": "Tipología y Características de los EPI",
+                    "descripcion": "Familiarízate con los diferentes tipos de equipos de protección individual y su uso correcto. Identifica el EPI adecuado para cada situación y aprende a mantenerlo en óptimas condiciones.",
+                    "imgSimulacion": "EPIS",
+                    "imgGrado": "Grado4",
+                    "direccionEjecutable": "cjvzxkjv.exe"
+                },
+                {
+                    "titulo": "Señalización a Helicóptero desde Tierra",
+                    "descripcion": "Comunica de manera efectiva con un helicóptero utilizando señales manuales. Aprende los códigos y protocolos de señalización para solicitar rescate o asistencia en diversas situaciones.",
+                    "imgSimulacion": "Helicoptero",
+                    "imgGrado": "Grado5",
+                    "direccionEjecutable": "sczxberb.exe"
+                }, 
+                {
+                    "titulo": "Rescate en Ascensores",
+                    "descripcion": "Adquiere las habilidades necesarias para rescatar personas atrapadas en ascensores en caso de emergencia. Practica el uso de herramientas especializadas y sigue los procedimientos de seguridad establecidos.",
+                    "imgSimulacion": "Ascensor",
+                    "imgGrado": "Grado0",
+                    "direccionEjecutable": "ccbrfio.exe"
+                }
+            ]
+        }
+    ]
+}
