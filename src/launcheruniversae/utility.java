@@ -36,17 +36,19 @@ public class utility {
 
     ;
      
-    public static String[] CreateArrayWithImages(String[] imagesArray, int indexSimulador) {
+    public static String[] CreateArrayWithImages(String[] imagesArray,int indexGrado, int indexSimulador) {
 
         for (int i = 0; i < imagesArray.length; i++) {
             String urlGeneral;
-            urlGeneral = uniApp.getImgSimulador(indexSimulador);
+            urlGeneral = uniApp.getImgSimulador(indexGrado, indexSimulador);
             String urlFinal = "src/images/" + urlGeneral + i + ".png";
             imagesArray[i] = urlFinal;
         }
 
         return imagesArray;
     }
+    
+    
 ;
 
 }

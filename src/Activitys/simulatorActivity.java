@@ -20,19 +20,21 @@ public class simulatorActivity extends javax.swing.JPanel {
     Dimension dimensionImgFondo = new Dimension(480, 380);
     Dimension dotDimension = new Dimension(15, 15);
 
-    public simulatorActivity(int indexSimulador) {
+    public simulatorActivity(int indexGrado, int indexSimulador) {
         initComponents();
 
         uniApp = new universaeApp();
 
-        imagesArray = utility.CreateArrayWithImages(imagesArray, indexSimulador);
+        imagesArray = utility.CreateArrayWithImages(imagesArray,indexGrado, indexSimulador);
         dotArray = new JLabel[]{indice1, indice2, indice3, indice4, indice5};
         index = 0;
 
-        tittleTxt.setText(uniApp.getTituloSimulacion(indexSimulador));
-        descripcionTxt.setText(uniApp.getDescripcionSimulacion(indexSimulador));
+        tittleTxt.setText(uniApp.getTituloSimulacion(indexGrado, indexSimulador));
+        descripcionTxt.setText(uniApp.getDescripcionSimulacion(indexGrado, indexSimulador));
 
         setVisible(true);
+        
+        System.out.println("Grado = " + indexGrado + ", Simulador = " + indexSimulador);
     }
 
     public void iniciarSimulator() {
@@ -81,7 +83,9 @@ public class simulatorActivity extends javax.swing.JPanel {
 
                 index--;
 
-                if (index < 0) index = 4;
+                if (index < 0) {
+                    index = 4;
+                }
 
                 funcionalidadCarrusel(index);
             }
@@ -121,9 +125,11 @@ public class simulatorActivity extends javax.swing.JPanel {
             public void mouseClicked(MouseEvent e) {
 
                 index++;
-                
-                if (index > 4) index = 0;
-                
+
+                if (index > 4) {
+                    index = 0;
+                }
+
                 funcionalidadCarrusel(index);
             }
         }
@@ -327,7 +333,7 @@ public class simulatorActivity extends javax.swing.JPanel {
         }
 
         utility.SetImageLabel(principalImg, imagesArray[index], dimensionImgPrincipal);
-        
+
         if (index == 4) {
             utility.SetImageLabel(rFondo, imagesArray[0], dimensionImgFondo);
         } else {
@@ -342,7 +348,7 @@ public class simulatorActivity extends javax.swing.JPanel {
 
             }
         }
-        
+
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

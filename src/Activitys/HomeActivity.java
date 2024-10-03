@@ -1,25 +1,32 @@
 package Activitys;
 
-import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JLabel;
 
 import launcheruniversae.mainActivity;
+import launcheruniversae.universaeApp;
 
 import launcheruniversae.utility;
 
 public class HomeActivity extends javax.swing.JPanel {
 
     public mainActivity padre;
+    private universaeApp uniApp;
+    private int indexGradoHome;
+    
 
-    public HomeActivity() {
+    public HomeActivity(int indexGrado) {
         initComponents();
 
+        indexGradoHome = indexGrado;
+        System.out.println("Grado = " + indexGradoHome);
     }
 
     public void iniciar() {
+        
+        uniApp = new universaeApp();
 
         JLabel[] simuladores = {simulador1, simulador2, simulador3, simulador4, simulador5, simulador6};
 
@@ -28,8 +35,9 @@ public class HomeActivity extends javax.swing.JPanel {
         Dimension dimensionMiniaturaPressed = new Dimension(375, 265);
 
         for (int i = 0; i < simuladores.length; i++) {
-
-            String urlHome = "src/images/Grado" + i + ".png";
+            
+            String urlIncompleta = uniApp.getImgGrado(indexGradoHome, i);
+            String urlHome = "src/images/" + urlIncompleta + ".png";
             utility.SetImageLabel(simuladores[i], urlHome, dimensionMiniaturas);
 
             final int index = i;
@@ -39,17 +47,12 @@ public class HomeActivity extends javax.swing.JPanel {
                 @Override
                 public void mouseClicked(MouseEvent e) {
                     padre.iniciarSimulacionYMostrarPanel(index);
-
+                    
                 }
 
                 @Override
                 public void mouseEntered(MouseEvent e) {
                     utility.SetImageLabel(simuladores[index], urlHome, dimensionMiniaturaHover);
-                    System.out.println("hola mundo");
-                    Cursor handCursor = Cursor.getPredefinedCursor(Cursor.HAND_CURSOR);
-                    simuladores[index].setCursor(handCursor);
-                    simuladores[index].revalidate();
-                    simuladores[index].repaint();
                 }
 
                 @Override

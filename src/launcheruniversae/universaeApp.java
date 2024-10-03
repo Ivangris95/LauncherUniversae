@@ -14,8 +14,6 @@ import java.util.ArrayList;
 public class universaeApp {
     private JsonArray grados;
     
-    private int gradosIndex = 0;
-    
     public universaeApp() {
         leerJson();
     }
@@ -51,22 +49,25 @@ public class universaeApp {
         }
     }
     
-    public String getTituloSimulacion(int indexSimulador) {
-        return grados.get(gradosIndex).getAsJsonObject().getAsJsonArray("simuladores").get(indexSimulador).getAsJsonObject().get("titulo").getAsString();
+    public String getTituloSimulacion(int indexGrado, int indexSimulador) {
+        return grados.get(indexGrado).getAsJsonObject().getAsJsonArray("simuladores").get(indexSimulador).getAsJsonObject().get("titulo").getAsString();
        
     }
     
-    public String getDescripcionSimulacion(int indexSimulador) {
-        return grados.get(gradosIndex).getAsJsonObject().getAsJsonArray("simuladores").get(indexSimulador).getAsJsonObject().get("descripcion").getAsString();
+    public String getDescripcionSimulacion(int indexGrado, int indexSimulador) {
+        return grados.get(indexGrado).getAsJsonObject().getAsJsonArray("simuladores").get(indexSimulador).getAsJsonObject().get("descripcion").getAsString();
     }
     
-    public String getNombreGrado() {
-        return grados.get(gradosIndex).getAsJsonObject().get("nombre").getAsString();
+    public String getNombreGrado(int indexGrado) {
+        return grados.get(indexGrado).getAsJsonObject().get("nombre").getAsString();
     }
 
     
-    public String getImgSimulador(int indexSimulador) {
-        return grados.get(gradosIndex).getAsJsonObject().getAsJsonArray("simuladores").get(indexSimulador).getAsJsonObject().get("img").getAsString();
+    public String getImgSimulador(int indexGrado, int indexSimulador) {
+        return grados.get(indexGrado).getAsJsonObject().getAsJsonArray("simuladores").get(indexSimulador).getAsJsonObject().get("imgSimulacion").getAsString();
     }  
    
+    public String getImgGrado(int indexGrado, int indexSimulador) {
+        return grados.get(indexGrado).getAsJsonObject().getAsJsonArray("simuladores").get(indexSimulador).getAsJsonObject().get("imgGrado").getAsString();
+    }  
 }
