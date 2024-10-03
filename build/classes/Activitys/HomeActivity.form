@@ -6,7 +6,6 @@
       <Color blue="48" green="26" red="a" type="rgb"/>
     </Property>
     <Property name="toolTipText" type="java.lang.String" value=""/>
-    <Property name="enabled" type="boolean" value="false"/>
     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
       <Dimension value="[1550, 880]"/>
     </Property>

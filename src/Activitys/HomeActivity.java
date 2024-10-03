@@ -1,88 +1,77 @@
 package Activitys;
 
-
-
-
 import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JLabel;
 
-
 import launcheruniversae.mainActivity;
-
 
 import launcheruniversae.utility;
 
-
 public class HomeActivity extends javax.swing.JPanel {
-   
+
     public mainActivity padre;
-    
-   
+
     public HomeActivity() {
         initComponents();
-        
-       
-        
+
     }
-    
+
     public void iniciar() {
-        
-       
-       
+
         JLabel[] simuladores = {simulador1, simulador2, simulador3, simulador4, simulador5, simulador6};
-        
+
         Dimension dimensionMiniaturas = new Dimension(380, 270);
         Dimension dimensionMiniaturaHover = new Dimension(390, 280);
-        Dimension dimensionMiniaturaPressed = new Dimension(375,265);
-        
-        
+        Dimension dimensionMiniaturaPressed = new Dimension(375, 265);
+
         for (int i = 0; i < simuladores.length; i++) {
-      
+
             String urlHome = "src/images/Grado" + i + ".png";
             utility.SetImageLabel(simuladores[i], urlHome, dimensionMiniaturas);
-            
-            
+
             final int index = i;
-            
-            simuladores[i].addMouseListener(new MouseAdapter(){
-            
+
+            simuladores[i].addMouseListener(new MouseAdapter() {
+
                 @Override
-                public void mouseClicked (MouseEvent e) {      
-                padre.iniciarSimulacionYMostrarPanel(index);
-               
+                public void mouseClicked(MouseEvent e) {
+                    padre.iniciarSimulacionYMostrarPanel(index);
+
                 }
 
                 @Override
                 public void mouseEntered(MouseEvent e) {
-                utility.SetImageLabel(simuladores[index], urlHome, dimensionMiniaturaHover);
-                simuladores[index].setCursor(new Cursor(Cursor.HAND_CURSOR));
+                    utility.SetImageLabel(simuladores[index], urlHome, dimensionMiniaturaHover);
+                    System.out.println("hola mundo");
+                    Cursor handCursor = Cursor.getPredefinedCursor(Cursor.HAND_CURSOR);
+                    simuladores[index].setCursor(handCursor);
+                    simuladores[index].revalidate();
+                    simuladores[index].repaint();
                 }
-            
+
                 @Override
                 public void mouseExited(MouseEvent e) {
-                utility.SetImageLabel(simuladores[index], urlHome, dimensionMiniaturas);
-                simuladores[index].setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+                    utility.SetImageLabel(simuladores[index], urlHome, dimensionMiniaturas);
                 }
-            
+
                 @Override
                 public void mousePressed(MouseEvent e) {
-                utility.SetImageLabel(simuladores[index], urlHome, dimensionMiniaturaPressed);               
+                    utility.SetImageLabel(simuladores[index], urlHome, dimensionMiniaturaPressed);
                 }
-            
+
                 @Override
                 public void mouseReleased(MouseEvent e) {
-                utility.SetImageLabel(simuladores[index], urlHome, dimensionMiniaturas);
-                }     
-         });
-            
+                    utility.SetImageLabel(simuladores[index], urlHome, dimensionMiniaturas);
+                }
+            });
+
         }
-        
-        
-        
+
     }
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -97,7 +86,6 @@ public class HomeActivity extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(10, 38, 72));
         setToolTipText("");
-        setEnabled(false);
         setMinimumSize(new java.awt.Dimension(1550, 880));
         setPreferredSize(new java.awt.Dimension(1550, 880));
         setLayout(new java.awt.GridBagLayout());
@@ -181,4 +169,3 @@ public class HomeActivity extends javax.swing.JPanel {
     private javax.swing.JLabel simulador6;
     // End of variables declaration//GEN-END:variables
 }
-  
