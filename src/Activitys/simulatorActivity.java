@@ -12,7 +12,7 @@ public class simulatorActivity extends javax.swing.JPanel {
     private JLabel[] dotArray;
     private int index;
     private universaeApp uniApp;
-    private HomeActivity home;
+    
     
 
     public simulatorActivity() {

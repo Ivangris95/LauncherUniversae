@@ -1,105 +1,72 @@
 package Activitys;
 
-
-
-
 import java.awt.Dimension;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JLabel;
 
-
 import launcheruniversae.mainActivity;
-
 
 import launcheruniversae.utility;
 
-
 public class HomeActivity extends javax.swing.JPanel {
-   
+
     public mainActivity padre;
-    
-   
+
     public HomeActivity() {
         initComponents();
-        
-        
+
     }
-    
+
     public void iniciar() {
-        
-       
+
         JLabel[] simuladores = {simulador1, simulador2, simulador3, simulador4, simulador5, simulador6};
-        
+
         Dimension dimensionMiniaturas = new Dimension(380, 270);
         Dimension dimensionMiniaturaHover = new Dimension(390, 280);
-        Dimension dimensionMiniaturaPressed = new Dimension(375,265);
-        
-        
+        Dimension dimensionMiniaturaPressed = new Dimension(375, 265);
+
         for (int i = 0; i < simuladores.length; i++) {
-      
+
             String urlHome = "src/images/Grado" + i + ".png";
             utility.SetImageLabel(simuladores[i], urlHome, dimensionMiniaturas);
-            
-            
+
             final int index = i;
-            
-            simuladores[i].addMouseListener(new MouseAdapter(){
-            
+
+            simuladores[i].addMouseListener(new MouseAdapter() {
+
                 @Override
-                public void mouseClicked (MouseEvent e) {      
-                padre.iniciarSimulacionYMostrarPanel();
-                
-                    switch (index) {
-                        case 0:
-                            System.out.println("simulador1");
-                            break;
-                        case 1:
-                            System.out.println("simulador2");
-                            break;
-                        case 2:
-                            System.out.println("simulador3");
-                            break;
-                        case 3:
-                            System.out.println("simulador4");
-                            break;
-                        case 4:
-                            System.out.println("simulador5");
-                            break;
-                        case 5:
-                            System.out.println("simulador6");
-                            break;        
-                        default:
-                            System.err.println("Error");
-                    }
+                public void mouseClicked(MouseEvent e) {
+
+                    padre.iniciarSimulacionYMostrarPanel(0);
+                    System.out.println("simulador1");
                 }
-                
+
                 @Override
                 public void mouseEntered(MouseEvent e) {
-                utility.SetImageLabel(simuladores[index], urlHome, dimensionMiniaturaHover);
+                    utility.SetImageLabel(simuladores[index], urlHome, dimensionMiniaturaHover);
                 }
-            
+
                 @Override
                 public void mouseExited(MouseEvent e) {
-                utility.SetImageLabel(simuladores[index], urlHome, dimensionMiniaturas);
+                    utility.SetImageLabel(simuladores[index], urlHome, dimensionMiniaturas);
                 }
-            
+
                 @Override
                 public void mousePressed(MouseEvent e) {
-                utility.SetImageLabel(simuladores[index], urlHome, dimensionMiniaturaPressed);               
+                    utility.SetImageLabel(simuladores[index], urlHome, dimensionMiniaturaPressed);
                 }
-            
+
                 @Override
                 public void mouseReleased(MouseEvent e) {
-                utility.SetImageLabel(simuladores[index], urlHome, dimensionMiniaturas);
-                }     
-         });
-            
+                    utility.SetImageLabel(simuladores[index], urlHome, dimensionMiniaturas);
+                }
+            });
+
         }
-        
-        
-        
+
     }
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -335,4 +302,3 @@ public class HomeActivity extends javax.swing.JPanel {
     private javax.swing.JLabel simulador6;
     // End of variables declaration//GEN-END:variables
 }
-  

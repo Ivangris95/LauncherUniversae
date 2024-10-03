@@ -7,7 +7,7 @@ import com.google.gson.JsonObject;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
+
 
 
 
@@ -32,7 +32,7 @@ public class universaeApp {
 
             BufferedReader reader = new BufferedReader(new InputStreamReader(archivo));
             Gson gson = new Gson();
-           ;
+           
             
 
             JsonObject jsonObject = gson.fromJson(reader, JsonObject.class);
@@ -65,14 +65,7 @@ public class universaeApp {
     public String getNombreGrado() {
         return grados.get(gradosIndex).getAsJsonObject().get("nombre").getAsString();
     }
-    
-//    public String getAsignaturaGrado() {
-//        return grados.get(gradosIndex).getAsJsonObject().get("contenido").getAsJsonObject().get("asignatura").getAsString();
-//    }
-    
-//    public String getUnidadGrado() {
-//        return grados.get(gradosIndex).getAsJsonObject().get("contenido").getAsJsonObject().get("unidad").getAsString();
-//    }
+
     
     public String getImgSimulador() {
         return grados.get(gradosIndex).getAsJsonObject().getAsJsonArray("simuladores").get(simuladoresIndex).getAsJsonObject().get("img").getAsString();

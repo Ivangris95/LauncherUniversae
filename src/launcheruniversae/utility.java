@@ -13,8 +13,7 @@ import javax.swing.JLabel;
 
 public class utility {
         
-
-   
+ 
     public static void SetImageLabel(JLabel labelName , String root) {
         ImageIcon image = new ImageIcon(root);
         Icon icon;
