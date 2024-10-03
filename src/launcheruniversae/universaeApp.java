@@ -63,19 +63,10 @@ public class universaeApp {
     public String getNombreGrado() {
         return grados.get(gradosIndex).getAsJsonObject().get("nombre").getAsString();
     }
-    
-//    public String getAsignaturaGrado() {
-//        return grados.get(gradosIndex).getAsJsonObject().get("contenido").getAsJsonObject().get("asignatura").getAsString();
-//    }
-    
-//    public String getUnidadGrado() {
-//        return grados.get(gradosIndex).getAsJsonObject().get("contenido").getAsJsonObject().get("unidad").getAsString();
-//    }
+
     
     public String getImgSimulador(int indexSimulador) {
         return grados.get(gradosIndex).getAsJsonObject().getAsJsonArray("simuladores").get(indexSimulador).getAsJsonObject().get("img").getAsString();
-    }
-    
-   
+    }  
    
 }

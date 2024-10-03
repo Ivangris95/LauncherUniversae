@@ -44,7 +44,7 @@ public class simulatorActivity extends javax.swing.JPanel {
         Dimension dimensionImgFondo = new Dimension(480, 380);
         
         
-        utility.SetImageLabel(beginBtn, "src/images/Comenzar.png", dimensionBtnStart);
+        utility.SetImageLabel(comenzarBtn, "src/images/Comenzar.png", dimensionBtnStart);
         utility.SetImageLabel(flechaRight, "src/images/Flecha derecha.png", dimensionBtnRigthAndLeft);
         utility.SetImageLabel(flechaLeft, "src/images/Flecha izquierda.png", dimensionBtnRigthAndLeft);
         utility.SetImageLabel(principalImg, imagesArray[0], dimensionImgPrincipal);
@@ -168,7 +168,7 @@ public class simulatorActivity extends javax.swing.JPanel {
         }
         );
 
-        beginBtn.addMouseListener(
+        comenzarBtn.addMouseListener(
                 new MouseAdapter() {
 
             String urlBtnBegin = "src/images/Comenzar.png";
@@ -176,25 +176,25 @@ public class simulatorActivity extends javax.swing.JPanel {
             @Override
             public void mouseEntered(MouseEvent e
             ) {
-                utility.SetImageLabel(beginBtn, urlBtnBegin, dimensionBtnStartHover);
+                utility.SetImageLabel(comenzarBtn, urlBtnBegin, dimensionBtnStartHover);
             }
 
             @Override
             public void mouseExited(MouseEvent e
             ) {
-                utility.SetImageLabel(beginBtn, urlBtnBegin, dimensionBtnStart);
+                utility.SetImageLabel(comenzarBtn, urlBtnBegin, dimensionBtnStart);
             }
 
             @Override
             public void mousePressed(MouseEvent e
             ) {
-                utility.SetImageLabel(beginBtn, urlBtnBegin, dimensionBtnStartPressed);
+                utility.SetImageLabel(comenzarBtn, urlBtnBegin, dimensionBtnStartPressed);
             }
 
             @Override
             public void mouseReleased(MouseEvent e
             ) {
-                utility.SetImageLabel(beginBtn, urlBtnBegin, dimensionBtnStart);
+                utility.SetImageLabel(comenzarBtn, urlBtnBegin, dimensionBtnStart);
             }
         }
         );
@@ -224,7 +224,7 @@ public class simulatorActivity extends javax.swing.JPanel {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        beginBtn = new javax.swing.JLabel();
+        comenzarBtn = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(10, 38, 72));
         setEnabled(false);
@@ -299,34 +299,44 @@ public class simulatorActivity extends javax.swing.JPanel {
         descripcionTxt.setForeground(new java.awt.Color(255, 255, 255));
         descripcionTxt.setText("Esto será una descripción de la simulación");
         descripcionTxt.setOpaque(false);
-        infoPanel.add(descripcionTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 48, 874, 97));
+        infoPanel.add(descripcionTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 874, 97));
 
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Coordinación de emergencias y protección civil. ");
-        infoPanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 880, 30));
+        infoPanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 880, 30));
 
+        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Planificación y supervisión del mantenimiento de equipos, medios técnicos e instalaciones. ");
-        infoPanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, 880, 30));
+        infoPanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 880, 30));
 
+        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Fácil");
-        infoPanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 880, 30));
+        infoPanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 880, 30));
 
+        jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Gestión de recursos de emergencias y protección civil ");
-        infoPanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 880, 30));
+        infoPanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 880, 30));
 
+        jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("10 minutos. ");
-        infoPanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 880, 30));
+        infoPanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, 880, 30));
 
         add(infoPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 540, 1070, 320));
 
-        beginBtn.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        beginBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Comenzar.png"))); // NOI18N
-        beginBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        add(beginBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 770, 263, 54));
+        comenzarBtn.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        comenzarBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Comenzar.png"))); // NOI18N
+        comenzarBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        add(comenzarBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 770, 263, 54));
     }// </editor-fold>//GEN-END:initComponents
 
     Dimension dimensionBtnRightAndLeftOPressed = new Dimension(12, 25);
@@ -336,7 +346,7 @@ public class simulatorActivity extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel beginBtn;
+    private javax.swing.JLabel comenzarBtn;
     private javax.swing.JTextPane descripcionTxt;
     private javax.swing.JLabel flechaLeft;
     private javax.swing.JLabel flechaRight;
