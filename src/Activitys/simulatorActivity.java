@@ -15,17 +15,20 @@ public class simulatorActivity extends javax.swing.JPanel {
     private int index;
     private universaeApp uniApp;
     private HomeActivity home;
-    
+
+    Dimension dimensionImgPrincipal = new Dimension(830, 450);
+    Dimension dimensionImgFondo = new Dimension(480, 380);
+    Dimension dotDimension = new Dimension(15, 15);
 
     public simulatorActivity(int indexSimulador) {
         initComponents();
-        
+
         uniApp = new universaeApp();
-        
+
         imagesArray = utility.CreateArrayWithImages(imagesArray, indexSimulador);
         dotArray = new JLabel[]{indice1, indice2, indice3, indice4, indice5};
         index = 0;
-        
+
         tittleTxt.setText(uniApp.getTituloSimulacion(indexSimulador));
         descripcionTxt.setText(uniApp.getDescripcionSimulacion(indexSimulador));
 
@@ -41,16 +44,12 @@ public class simulatorActivity extends javax.swing.JPanel {
         Dimension dimensionBtnRightAndLeftHover = new Dimension(23, 35);
         Dimension dimensionBtnRightAndLeftOPressed = new Dimension(19, 30);
 
-        Dimension dimensionImgPrincipal = new Dimension(830, 450);
-        Dimension dimensionImgFondo = new Dimension(480, 380);
-        
-        
         utility.SetImageLabel(comenzarBtn, "src/images/Comenzar.png", dimensionBtnStart);
         utility.SetImageLabel(flechaRight, "src/images/Flecha derecha.png", dimensionBtnRigthAndLeft);
         utility.SetImageLabel(flechaLeft, "src/images/Flecha izquierda.png", dimensionBtnRigthAndLeft);
         utility.SetImageLabel(principalImg, imagesArray[0], dimensionImgPrincipal);
-        utility.SetImageLabel(lFondo, imagesArray[1], dimensionImgFondo);
-        utility.SetImageLabel(rFondo, imagesArray[2], dimensionImgFondo);
+        utility.SetImageLabel(lFondo, imagesArray[4], dimensionImgFondo);
+        utility.SetImageLabel(rFondo, imagesArray[1], dimensionImgFondo);
 
         flechaLeft.addMouseListener(new MouseAdapter() {
 
@@ -79,32 +78,12 @@ public class simulatorActivity extends javax.swing.JPanel {
 
             @Override
             public void mouseClicked(MouseEvent e) {
-                Dimension dimensionImgPrincipal = new Dimension(830, 450);
-                Dimension dimensionImgFondo = new Dimension(480, 380);
-                Dimension dotDimension = new Dimension(15, 15);
 
-                if (index == 0) {
-                    utility.SetImageLabel(lFondo, imagesArray[imagesArray.length - 2], dimensionImgFondo);
-                    utility.SetImageLabel(principalImg, imagesArray[imagesArray.length - 1], dimensionImgPrincipal);
-                    utility.SetImageLabel(rFondo, imagesArray[0], dimensionImgFondo);
-                    utility.SetImageLabel(dotArray[index], "src/images/PuntoCarruselEmpty.png", dotDimension);
-                    utility.SetImageLabel(dotArray[dotArray.length - 1], "src/images/PuntoCarruselFilled.png", dotDimension);
-                    index = imagesArray.length - 1;
-                } else if (index == 1) {
-                    utility.SetImageLabel(lFondo, imagesArray[imagesArray.length - 1], dimensionImgFondo);
-                    utility.SetImageLabel(principalImg, imagesArray[0], dimensionImgPrincipal);
-                    utility.SetImageLabel(rFondo, imagesArray[1], dimensionImgFondo);
-                    utility.SetImageLabel(dotArray[index], "src/images/PuntoCarruselEmpty.png", dotDimension);
-                    utility.SetImageLabel(dotArray[0], "src/images/PuntoCarruselFilled.png", dotDimension);
-                    index--;
-                } else {
-                    utility.SetImageLabel(lFondo, imagesArray[index - 2], dimensionImgFondo);
-                    utility.SetImageLabel(principalImg, imagesArray[index - 1], dimensionImgPrincipal);
-                    utility.SetImageLabel(rFondo, imagesArray[index], dimensionImgFondo);
-                    utility.SetImageLabel(dotArray[index], "src/images/PuntoCarruselEmpty.png", dotDimension);
-                    utility.SetImageLabel(dotArray[index - 1], "src/images/PuntoCarruselFilled.png", dotDimension);
-                    index--;
-                }
+                index--;
+
+                if (index < 0) index = 4;
+
+                funcionalidadCarrusel(index);
             }
         }
         );
@@ -140,32 +119,12 @@ public class simulatorActivity extends javax.swing.JPanel {
 
             @Override
             public void mouseClicked(MouseEvent e) {
-                Dimension dimensionImgPrincipal = new Dimension(830, 450);
-                Dimension dimensionImgFondo = new Dimension(480, 380);
-                Dimension dotDimension = new Dimension(15, 15);
 
-                if (index == imagesArray.length - 2) {
-                    utility.SetImageLabel(lFondo, imagesArray[index], dimensionImgFondo);
-                    utility.SetImageLabel(principalImg, imagesArray[index + 1], dimensionImgPrincipal);
-                    utility.SetImageLabel(rFondo, imagesArray[0], dimensionImgFondo);
-                    utility.SetImageLabel(dotArray[index], "src/images/PuntoCarruselEmpty.png", dotDimension);
-                    utility.SetImageLabel(dotArray[index + 1], "src/images/PuntoCarruselFilled.png", dotDimension);
-                    index++;
-                } else if (index == imagesArray.length - 1) {
-                    utility.SetImageLabel(lFondo, imagesArray[index], dimensionImgFondo);
-                    utility.SetImageLabel(principalImg, imagesArray[0], dimensionImgPrincipal);
-                    utility.SetImageLabel(rFondo, imagesArray[1], dimensionImgFondo);
-                    utility.SetImageLabel(dotArray[index], "src/images/PuntoCarruselEmpty.png", dotDimension);
-                    utility.SetImageLabel(dotArray[0], "src/images/PuntoCarruselFilled.png", dotDimension);
-                    index = 0;
-                } else {
-                    utility.SetImageLabel(lFondo, imagesArray[index], dimensionImgFondo);
-                    utility.SetImageLabel(principalImg, imagesArray[index + 1], dimensionImgPrincipal);
-                    utility.SetImageLabel(rFondo, imagesArray[index + 2], dimensionImgFondo);
-                    utility.SetImageLabel(dotArray[index], "src/images/PuntoCarruselEmpty.png", dotDimension);
-                    utility.SetImageLabel(dotArray[index + 1], "src/images/PuntoCarruselFilled.png", dotDimension);
-                    index++;
-                }
+                index++;
+                
+                if (index > 4) index = 0;
+                
+                funcionalidadCarrusel(index);
             }
         }
         );
@@ -359,6 +318,32 @@ public class simulatorActivity extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_comenzarBtnMouseClicked
 
+    private void funcionalidadCarrusel(int index) {
+
+        if (index == 0) {
+            utility.SetImageLabel(lFondo, imagesArray[4], dimensionImgFondo);
+        } else {
+            utility.SetImageLabel(lFondo, imagesArray[index - 1], dimensionImgFondo);
+        }
+
+        utility.SetImageLabel(principalImg, imagesArray[index], dimensionImgPrincipal);
+        
+        if (index == 4) {
+            utility.SetImageLabel(rFondo, imagesArray[0], dimensionImgFondo);
+        } else {
+            utility.SetImageLabel(rFondo, imagesArray[index + 1], dimensionImgFondo);
+        }
+
+        for (int i = 0; i < dotArray.length; i++) {
+            if (i == index) {
+                utility.SetImageLabel(dotArray[i], "src/images/PuntoCarruselFilled.png", dotDimension);
+            } else {
+                utility.SetImageLabel(dotArray[i], "src/images/PuntoCarruselEmpty.png", dotDimension);
+
+            }
+        }
+        
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel comenzarBtn;
