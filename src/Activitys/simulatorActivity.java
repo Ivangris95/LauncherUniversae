@@ -1,5 +1,6 @@
 package Activitys;
 
+import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -58,6 +59,7 @@ public class simulatorActivity extends javax.swing.JPanel {
             @Override
             public void mouseEntered(MouseEvent e) {
                 utility.SetImageLabel(flechaLeft, urlFlechaLeft, dimensionBtnRightAndLeftHover);
+                flechaLeft.setCursor(new Cursor(Cursor.HAND_CURSOR));
             }
 
             @Override
@@ -280,7 +282,7 @@ public class simulatorActivity extends javax.swing.JPanel {
         indice5.setPreferredSize(new java.awt.Dimension(15, 15));
         indiceImg.add(indice5);
 
-        add(indiceImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 490, 100, 15));
+        add(indiceImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 480, 100, 20));
 
         infoPanel.setOpaque(false);
         infoPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
