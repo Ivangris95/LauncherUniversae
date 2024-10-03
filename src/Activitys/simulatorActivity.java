@@ -14,21 +14,28 @@ public class simulatorActivity extends javax.swing.JPanel {
     private String[] imagesArray = new String[5];
     private int index;
     private universaeApp uniApp;
-    private HomeActivity home;
 
+    
+    private HomeActivity home;
+    
+    // Se crean tres objetos Dimension para establecer el tamaño de tres imágenes diferentes(imagen principal, imagen de fondo y el indice de el carrusel)
     Dimension dimensionImgPrincipal = new Dimension(830, 450);
     Dimension dimensionImgFondo = new Dimension(480, 380);
     Dimension dotDimension = new Dimension(15, 15);
 
+
     public simulatorActivity(int indexSimulador) {
         initComponents();
 
-        uniApp = new universaeApp();
-
+        uniApp = new universaeApp()
+                ;
+        // Se encarga de generar un nuevo conjunto de imágenes basado en el valor de indexSimulador.
         imagesArray = utility.CreateArrayWithImages(imagesArray, indexSimulador);
+        //Se crea un objeto que guarda en un array con los JLabel
         dotArray = new JLabel[]{indice1, indice2, indice3, indice4, indice5};
         index = 0;
-
+        
+        //Cambia el contenido de los JLabel introduciendo valores establecidos en el Json.
         tittleTxt.setText(uniApp.getTituloSimulacion(indexSimulador));
         descripcionTxt.setText(uniApp.getDescripcionSimulacion(indexSimulador));
 
@@ -36,21 +43,26 @@ public class simulatorActivity extends javax.swing.JPanel {
     }
 
     public void iniciarSimulator() {
+        
+        //Variables que definen las dimensiones del botón 'Comenzar' en sus diferentes estados (normal, al pasar el ratón y al presionar).
         Dimension dimensionBtnStart = new Dimension(253, 44);
         Dimension dimensionBtnStartHover = new Dimension(258, 49);
         Dimension dimensionBtnStartPressed = new Dimension(248, 39);
-
+        
+        //Variables que definen las dimensiones del botón 'Flecha izquierda y flecha derecha' en sus diferentes estados (normal, al pasar el ratón y al presionar).
         Dimension dimensionBtnRigthAndLeft = new Dimension(21, 32);
         Dimension dimensionBtnRightAndLeftHover = new Dimension(23, 35);
         Dimension dimensionBtnRightAndLeftOPressed = new Dimension(19, 30);
-
+        
+        // Carga las imágenes y establece las dimensiones de los botones
         utility.SetImageLabel(comenzarBtn, "src/images/Comenzar.png", dimensionBtnStart);
         utility.SetImageLabel(flechaRight, "src/images/Flecha derecha.png", dimensionBtnRigthAndLeft);
         utility.SetImageLabel(flechaLeft, "src/images/Flecha izquierda.png", dimensionBtnRigthAndLeft);
         utility.SetImageLabel(principalImg, imagesArray[0], dimensionImgPrincipal);
         utility.SetImageLabel(lFondo, imagesArray[4], dimensionImgFondo);
         utility.SetImageLabel(rFondo, imagesArray[1], dimensionImgFondo);
-
+        
+       
         flechaLeft.addMouseListener(new MouseAdapter() {
 
             String urlFlechaLeft = "src/images/Flecha izquierda.png";
@@ -134,6 +146,7 @@ public class simulatorActivity extends javax.swing.JPanel {
 
             String urlBtnBegin = "src/images/Comenzar.png";
 
+            
             @Override
             public void mouseEntered(MouseEvent e
             ) {
@@ -309,6 +322,7 @@ public class simulatorActivity extends javax.swing.JPanel {
         utility.SetImageLabel(flechaLeft, "src/images/Flecha izquierda.png", dimensionBtnRightAndLeftOPressed);
     }//GEN-LAST:event_flechaLeftMousePressed
 
+    //Inicia la aplicación externa al hacer clic en el botón.
     private void comenzarBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_comenzarBtnMouseClicked
         try {
             String rutaEjecutable = "C:/Users/loco8/OneDrive/Escritorio/QuizDemo/QuizDemo.exe";
@@ -318,6 +332,8 @@ public class simulatorActivity extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_comenzarBtnMouseClicked
 
+    
+    //Implementa la lógica para el carrusel de imágenes.
     private void funcionalidadCarrusel(int index) {
 
         if (index == 0) {

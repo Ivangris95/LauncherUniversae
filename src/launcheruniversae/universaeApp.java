@@ -7,7 +7,7 @@ import com.google.gson.JsonObject;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
+
 
 
 
@@ -20,6 +20,7 @@ public class universaeApp {
         leerJson();
     }
     
+    //Este código carga un archivo JSON llamado "info.json" desde los recursos del proyecto y analiza su contenido utilizando la biblioteca Gson.
     private void leerJson() {
         try {
             InputStream archivo = getClass().getResourceAsStream("info.json");
@@ -30,7 +31,7 @@ public class universaeApp {
 
             BufferedReader reader = new BufferedReader(new InputStreamReader(archivo));
             Gson gson = new Gson();
-           ;
+           
             
 
             JsonObject jsonObject = gson.fromJson(reader, JsonObject.class);
@@ -51,22 +52,26 @@ public class universaeApp {
         }
     }
     
+    //Esta función obtiene el título de una simulación específica a partir de un arreglo de objetos JSON.
     public String getTituloSimulacion(int indexSimulador) {
         return grados.get(gradosIndex).getAsJsonObject().getAsJsonArray("simuladores").get(indexSimulador).getAsJsonObject().get("titulo").getAsString();
        
     }
     
+    //Esta función obtiene la descripción de una simulación específica a partir de un arreglo de objetos JSON.
     public String getDescripcionSimulacion(int indexSimulador) {
         return grados.get(gradosIndex).getAsJsonObject().getAsJsonArray("simuladores").get(indexSimulador).getAsJsonObject().get("descripcion").getAsString();
     }
     
+    //Esta función obtiene el nombre de un grado específico a partir de un arreglo de objetos JSON.
     public String getNombreGrado() {
         return grados.get(gradosIndex).getAsJsonObject().get("nombre").getAsString();
     }
 
-    
+    //Esta función obtiene las ruta de las imágenes de una simulación específica a partir de un arreglo de objetos JSON.
     public String getImgSimulador(int indexSimulador) {
         return grados.get(gradosIndex).getAsJsonObject().getAsJsonArray("simuladores").get(indexSimulador).getAsJsonObject().get("img").getAsString();
     }  
+
    
 }
