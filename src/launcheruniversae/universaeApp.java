@@ -18,6 +18,7 @@ public class universaeApp {
         leerJson();
     }
     
+    //Este código carga un archivo JSON llamado "info.json" desde los recursos del proyecto y analiza su contenido utilizando la biblioteca Gson.
     private void leerJson() {
         try {
             InputStream archivo = getClass().getResourceAsStream("info.json");
@@ -49,24 +50,28 @@ public class universaeApp {
         }
     }
     
+    //Esta función obtiene el título de una simulación específica a partir de un arreglo de objetos JSON.
     public String getTituloSimulacion(int indexGrado, int indexSimulador) {
         return grados.get(indexGrado).getAsJsonObject().getAsJsonArray("simuladores").get(indexSimulador).getAsJsonObject().get("titulo").getAsString();
        
     }
     
+    //Esta función obtiene la descripción de una simulación específica a partir de un arreglo de objetos JSON.
     public String getDescripcionSimulacion(int indexGrado, int indexSimulador) {
         return grados.get(indexGrado).getAsJsonObject().getAsJsonArray("simuladores").get(indexSimulador).getAsJsonObject().get("descripcion").getAsString();
     }
     
+    //Esta función obtiene el nombre de un grado específico a partir de un arreglo de objetos JSON.
     public String getNombreGrado(int indexGrado) {
         return grados.get(indexGrado).getAsJsonObject().get("nombre").getAsString();
     }
 
-    
+    //Esta función obtiene las ruta de las imágenes de una simulación específica a partir de un arreglo de objetos JSON.
     public String getImgSimulador(int indexGrado, int indexSimulador) {
         return grados.get(indexGrado).getAsJsonObject().getAsJsonArray("simuladores").get(indexSimulador).getAsJsonObject().get("imgSimulacion").getAsString();
     }  
    
+    //Esta función obtiene la ruta de una imágen de un grado específico.
     public String getImgGrado(int indexGrado, int indexSimulador) {
         return grados.get(indexGrado).getAsJsonObject().getAsJsonArray("simuladores").get(indexSimulador).getAsJsonObject().get("imgGrado").getAsString();
     }  
